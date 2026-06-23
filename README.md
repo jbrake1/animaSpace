@@ -6,6 +6,13 @@ This repository contains patent applications for the AnimaSpace bio-manufacturin
 ## Important Note
 ⚠️ **Disclaimer**: These documents contain some AI-generated content with hallucinations that have not been corrected, and some calculations may be inaccurate. These are draft patent applications that require further review and refinement.
 
+## Project Status
+🚁 **Experimental Validation Phase** - Currently awaiting delivery of a large drone (July 2026) capable of carrying up to 65 pounds. This drone will be used to conduct microgravity experiments:
+- Drop experimental apparatus from approximately 150 feet altitude
+- Achieve ~3.5 seconds of zero-gravity conditions during free fall
+- Test acoustic toroidal formation using a phased array system
+- Validate theoretical predictions of toroid stability in microgravity vs Earth gravity collapse patterns
+
 ## Patent Documents
 
 ### Core Technology Patents
