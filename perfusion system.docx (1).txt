@@ -1,0 +1,230 @@
+﻿UNITED STATES Non-Provisional PATENT APPLICATION
+INTEGRATED BIOMORPHIC ORGAN AND TISSUE PERFUSION SYSTEM
+WITH PATIENT-SPECIFIC HYDRAULIC ARCHITECTURE,
+MULTI-CIRCUIT VASCULAR MIMICRY, AND DISSOLVED-PHASE GAS MANAGEMENT
+
+
+
+
+INVENTOR: Jimmy Claude Brake Jr
+CLASSIFICATION: A61M 1/10; A61F 2/00; B33Y 80/00; A61M 60/00
+
+
+FIELD OF THE INVENTION
+The present invention relates to ex vivo organ and tissue perfusion systems, and more particularly to an integrated system combining patient-specific three-dimensionally printed flexible hydraulic pump architecture, three-circuit vascular mimicry replicating arterial, venous, and lymphatic flow dynamics, dissolved-phase gas management without a free gas atmosphere, closed-loop metabolic monitoring and control via arteriovenous biomarker sensing, multi-stage waste processing, and coordinated operation across both microgravity and terrestrial one-gravity environments.
+
+
+BACKGROUND OF THE INVENTION
+Ex vivo organ perfusion has emerged as a critical technology for organ preservation prior to transplantation, for the maturation of engineered tissues, and for the support of organs and limbs during repair, growth, or reconditioning. Existing perfusion systems suffer from several fundamental limitations that restrict their applicability, particularly in research and manufacturing contexts requiring extended perfusion periods and operation in non-terrestrial environments.
+
+
+First, conventional perfusion circuits employ rigid or semi-rigid tubing of standardized dimensions that do not account for the specific vascular geometry, flow resistance, or pressure requirements of individual patient organs. This geometric mismatch introduces systematic pressure errors at anastomosis points, disrupting the Starling force equilibrium governing capillary fluid exchange and causing progressive tissue edema or ischemia.
+
+
+Second, existing systems typically replicate only the arterial side of the circulatory system, neglecting venous return dynamics and lymphatic drainage. This omission causes progressive interstitial fluid accumulation, increasing diffusion distances and impairing cellular nutrition. The absence of active lymphatic drainage simulation is a primary cause of tissue degradation in extended ex vivo perfusion.
+
+
+Third, all prior art perfusion systems rely on a free gas phase for oxygenation, employing membrane oxygenators that interface perfusate with a gas atmosphere. This architecture is incompatible with microgravity environments, hyperbaric aqueous operating environments, and scenarios where atmospheric gas is not available or where free gas bubbles present unacceptable risks to delicate vascular tissue.
+
+
+Fourth, no existing system provides coordinated real-time control of gas delivery, waste removal, and nutrient replenishment through a unified closed-loop architecture responsive to actual organ metabolic demand as measured by arteriovenous biomarker differentials.
+
+
+Fifth, all existing perfusion circuits are fabricated as reusable standardized components requiring sterilization between uses, imposing regulatory burden and precluding per-patient geometric customization.
+
+
+What is needed is a unified perfusion system that addresses all of the above limitations simultaneously, providing patient-specific geometry, complete three-circuit vascular mimicry, gas-free oxygenation suitable for hyperbaric and microgravity environments, closed-loop metabolic control, and disposable per-patient construction. The present invention provides such a system.
+
+
+SUMMARY OF THE INVENTION
+The present invention provides an integrated biomorphic perfusion system comprising a pulsatile hydraulic pump circuit of patient-specific geometry fabricated by additive manufacturing in biocompatible flexible material; a three-circuit vascular analog replicating arterial, venous, and lymphatic hemodynamics; a dissolved-phase gas management subsystem operating without a free gas atmosphere; a closed-loop metabolic monitoring and control architecture based on arteriovenous biomarker differentials; a multi-stage waste processing train including acoustic debris separation; and a hyperbaric aqueous operating environment compatible with both microgravity and one-gravity conditions.
+
+
+In one aspect, the invention provides a pulsatile hydraulic pump comprising a plurality of flexible compression chambers fabricated from biocompatible elastomeric material, each chamber surrounded by a hydraulic fluid jacket driven by a brushless DC servo-actuated syringe pump, wherein the compression timing, volume, and rate are independently programmable to synthesize any desired cardiac pressure waveform including waveforms replicating specific patient pathologies or developmental conditions.
+
+
+In another aspect, the invention provides a three-circuit perfusion architecture wherein an arterial circuit operating at physiological systolic pressures drives perfusate through patient-specific channels of graduated compliance matching the natural arteriovenous pressure reduction profile; a venous return circuit operating at near-atmospheric pressure with peristaltic assist replicating skeletal muscle pump action; and a lymphatic drainage circuit operating at controlled sub-atmospheric interstitial pressure providing continuous removal of interstitial fluid and macromolecular waste.
+
+
+In a further aspect, the invention provides a dissolved-phase gas management system wherein oxygen is generated by electrolysis of water at a rate controlled by feedback from dissolved oxygen sensors positioned on the arterial and venous sides of the organ circuit, and carbon dioxide is removed by electrochemical or chemical scrubbing without generation of a free gas phase, with all gas exchange occurring at the molecular dissolved level within a sealed pressurized perfusate circuit.
+
+
+In yet another aspect, the invention provides a closed-loop bioprocess control system wherein arteriovenous differences in dissolved oxygen tension, pH, lactate concentration, and glucose concentration are continuously measured and used to modulate electrolysis rate, CO2 scrubber throughput, nutrient infusion rate, and pump parameters, with biological trajectory modeling providing predictive control based on known organ developmental phase curves.
+
+
+DETAILED DESCRIPTION OF PREFERRED EMBODIMENTS
+1. Overview of System Architecture
+Referring generally to the invention, the integrated perfusion system 100 comprises six primary subsystems operating in coordinated fashion: a pulsatile hydraulic pump subsystem 110; a three-circuit vascular analog 120 comprising arterial circuit 121, venous circuit 122, and lymphatic circuit 123; a dissolved-phase gas management subsystem 130; a closed-loop bioprocess control subsystem 140; a multi-stage waste processing subsystem 150; and a hyperbaric aqueous operating environment 160. Each subsystem is described in detail below.
+
+
+The entire system is designed for operation within a hyperbaric aqueous environment maintained at approximately 37 degrees Celsius and 2 atmospheres absolute pressure, eliminating the need for a gas atmosphere within the operating environment and providing significant advantages for bubble management and dissolved gas carrying capacity as described herein.
+
+
+2. Pulsatile Hydraulic Pump Subsystem
+The pulsatile pump subsystem 110 comprises a plurality of flexible compression chambers 111, trileaflet valve assemblies 112, hydraulic fluid circuits 113, brushless DC servo-actuated syringe pump drivers 114, and associated electronic control systems 115.
+
+
+Each compression chamber 111 comprises a tubular or sac-like element fabricated from biocompatible elastomeric material, preferably medical-grade silicone, polyether block amide (PEBA), or thermoplastic polyurethane (TPU) selected for Shore hardness appropriate to the target compliance at the specific circuit location. The compression chamber is surrounded by a hydraulic fluid jacket 113a through which an incompressible hydraulic fluid, preferably sterile water, is selectively admitted or withdrawn to compress or release the chamber wall. Hydraulic fluid flow is driven by brushless DC servo-actuated syringe pumps 114 providing sub-microliter positional accuracy and programmable flow rate profiles.
+
+
+The trileaflet valve assemblies 112 are positioned at the inlet and outlet of each compression chamber and at strategic locations throughout the circuit. Each valve comprises three flexible leaflets fabricated from fiber-reinforced biocompatible elastomer, oriented with principal fiber direction aligned to the principal stress direction under operating load to maximize fatigue life. The valve geometry replicates the trileaflet architecture of the native aortic and pulmonary valves, which distributes mechanical stress across three elements to extend cycle life. In preferred embodiments, valve actuation timing and leaflet opening velocity are independently controlled via hydraulic actuation to allow programmable waveform shaping.
+
+
+In preferred embodiments, the pump subsystem comprises between two and twelve compression chambers arranged in series, with phase offsets between chambers providing peristaltic-like flow synthesis. With N chambers offset in phase by 360/N degrees, the resulting waveform approximates a physiological cardiac pressure-volume loop with increasing fidelity as N increases. Eight chambers provide sufficient resolution to synthesize realistic waveforms including systolic peak, dicrotic notch, and diastolic runoff, enabling the system to mimic any specified cardiac output condition including normal, hypertensive, cardiomyopathic, and developmental states.
+
+
+All components of the pump subsystem contacting perfusate are fabricated by multi-material additive manufacturing processes, preferably fused deposition modeling, stereolithography, or direct ink writing of biocompatible elastomeric materials, with patient-specific dimensions derived from the recipient's vascular imaging data. This patient-specific geometry ensures that luminal diameters, branching angles, and channel lengths match the native vasculature, minimizing pressure mismatches at anastomosis points and ensuring correct Starling force equilibrium at the capillary level. Following single-patient use, all perfusate-contacting components are discarded, eliminating the need for sterilization validation between uses.
+
+
+3. Three-Circuit Vascular Analog
+The three-circuit vascular analog 120 replicates the distinct hemodynamic environments of the arterial, venous, and lymphatic systems, which operate at fundamentally different pressure regimes and serve distinct physiological functions.
+
+
+3.1 Arterial Circuit. The arterial circuit 121 operates at pressures ranging from approximately 60 to 120 mmHg, with a pulsatile waveform synthesized by the pump subsystem. Arterial circuit tubing exhibits graduated compliance, with higher compliance near the pump outlet mimicking the Windkessel effect of the aorta and large elastic arteries, and progressively reduced compliance approaching the capillary bed mimicking the muscular arteries and arterioles. Graduated compliance is achieved through variation of wall thickness, material Shore hardness, or both, as defined in the patient-specific fabrication data. The non-linear stiffening characteristic of native arterial walls, which provides natural pressure stability by increasing resistance to flow as pressure rises, is replicated through geometric design of the tube cross-section including wall thickness profile and reinforcing element geometry.
+
+
+3.2 Venous Circuit. The venous circuit 122 operates at pressures of approximately 5 to 15 mmHg and employs large-diameter low-resistance channels to minimize venous resistance. Bicuspid check valves positioned at intervals along the venous return path prevent retrograde flow under any orientation condition, including microgravity where gravitational assistance for venous return is absent. A gentle peristaltic assist mechanism driven by a dedicated low-pressure hydraulic subsystem replicates the skeletal muscle pump action that drives the majority of venous return in vivo. The venous circuit is designed to maintain near-atmospheric transmural pressure at all points; active pressure monitoring and servo control prevent negative transmural pressure that would cause vessel collapse and ischemia.
+
+
+3.3 Lymphatic Circuit. The lymphatic circuit 123 operates at a controlled sub-atmospheric pressure relative to the interstitial compartment, providing continuous drainage of interstitial fluid that is not reabsorbed by the venous capillaries. In physiological systems, this fraction represents approximately 10% of total capillary filtrate and carries macromolecular waste products too large for venous capillary reabsorption. The lymphatic circuit employs large-pore drainage channels permitting protein passage, and a separate very-low-pressure hydraulic return circuit with controlled negative gauge pressure calibrated to the expected capillary filtration rate of the specific organ. Drained lymphatic fluid passes through a protein-retaining filter before return to the perfusate reservoir, removing cellular debris and macromolecular waste while conserving oncotic proteins. In microgravity, where passive interstitial drainage is absent, the lymphatic circuit flow rate is increased relative to terrestrial operation to compensate for reduced gravity-assisted drainage.
+
+
+3.4 Oncotic Pressure Management. The perfusate of all three circuits is formulated to provide oncotic pressure of approximately 25 mmHg through inclusion of albumin, hydroxyethyl starch, or synthetic oncotic equivalents at physiologically appropriate concentrations. Oncotic pressure is monitored periodically and maintained within specified bounds through controlled addition of oncotic agents from a supplemental reservoir. Correct oncotic pressure is essential to maintaining the Starling force equilibrium governing net capillary filtration; perfusates lacking oncotic agents will cause progressive tissue edema regardless of pressure control accuracy.
+
+
+4. Dissolved-Phase Gas Management Subsystem
+The dissolved-phase gas management subsystem 130 provides oxygen delivery and carbon dioxide removal entirely within the dissolved molecular phase, without introduction of a free gas phase into the perfusate circuit at any point. This architecture is uniquely suited to operation in hyperbaric aqueous environments, sealed pressurized systems, and microgravity conditions where free gas bubbles cannot be managed by gravitational phase separation.
+
+
+4.1 Oxygen Generation and Delivery. Dissolved oxygen is provided by electrolysis of water within a dedicated electrochemical cell 131. The electrolysis cell generates oxygen at a rate controlled by feedback from optical fluorescence-quenching dissolved oxygen sensors 132a, 132b positioned on the arterial and venous sides of the organ circuit respectively. The arteriovenous dissolved oxygen difference represents the oxygen consumed by the perfused organ per unit time; the electrolysis rate is modulated to replace exactly this consumed quantity, maintaining arterial dissolved oxygen tension within a target physiological range of 80 to 100 mmHg partial pressure equivalent. Hydrogen generated as a byproduct of electrolysis is managed by catalytic recombination with dissolved oxygen or venting to the external aqueous environment. The sealed perfusate circuit contains no gas headspace; oxygen dissolves directly from the electrochemical cell into the circulating perfusate. At the operating pressure of 2 atmospheres absolute, the dissolved oxygen carrying capacity of the perfusate is approximately doubled relative to atmospheric operation per Henry's Law, providing significant reserve capacity. In embodiments employing perfluorocarbon-based perfusate, oxygen carrying capacity is further enhanced due to the linear pressure-dependent oxygen solubility of perfluorocarbon compounds.
+
+
+4.2 Carbon Dioxide Removal. Dissolved carbon dioxide is removed from the perfusate by electrochemical conversion or chemical scrubbing within dedicated removal cells 133. In preferred embodiments, monoethanolamine or similar amine-based scrubbing agents capture dissolved CO2 in a regenerable reaction, with thermal regeneration cycling releasing concentrated CO2 for disposal while returning the scrubbing agent to active form. Alternatively, electrochemical CO2 capture cells convert dissolved CO2 to bicarbonate or carbonate ions. CO2 removal rate is modulated by feedback from pH sensors and direct dissolved CO2 sensors, maintaining perfusate pH within the physiological range of 7.35 to 7.45 and CO2 partial pressure equivalent within the range of 35 to 45 mmHg. Because CO2 serves as a critical pH buffer through the bicarbonate system, removal rate is controlled to maintain pH stability rather than simply maximize CO2 clearance; excessive CO2 removal causing alkalosis impairs oxygen delivery through leftward shift of the oxygen-hemoglobin dissociation curve in hemoglobin-containing perfusates.
+
+
+4.3 Bubble Prevention and Detection. The sealed pressurized architecture of the dissolved-phase gas management system prevents introduction of free gas bubbles at the gas management stage. Additional bubble prevention measures include operation at elevated pressure which thermodynamically destabilizes small bubbles, use of degassed perfusate, and pressure integrity monitoring of all circuit connections with automatic shutoff upon detection of pressure anomalies indicating possible leak-induced bubble introduction. Bubble detection sensors positioned at multiple points in the circuit provide redundant monitoring.
+
+
+5. Closed-Loop Bioprocess Control Subsystem
+The closed-loop bioprocess control subsystem 140 provides real-time monitoring of organ metabolic status and modulation of all perfusion parameters to maintain optimal organ health through developmental phases.
+
+
+5.1 Primary Biomarker Sensing. The minimum viable sensor set comprises: dissolved oxygen sensors 132a, 132b on arterial and venous sides providing metabolic rate via Fick Principle arteriovenous difference; pH sensors providing acid-base status and CO2 scrubber control signal; lactate sensors providing earliest available indicator of metabolic distress or anaerobic shift; and differential pressure sensors across the organ construct providing vascular resistance as an indicator of edema or thrombosis. Optical fluorescence-quenching sensors are preferred for dissolved gas measurement to avoid sensor oxygen consumption. Enzymatic electrochemical sensors are employed for lactate and glucose measurement, with replaceable sensor cartridges accommodating sensor lifetime limitations.
+
+
+5.2 Derived Metrics and Trajectory Control. Additional metabolic parameters including glucose consumption rate, respiratory quotient, and estimated amino acid turnover are calculated from primary sensor data and known metabolic stoichiometry. The respiratory quotient, defined as the ratio of CO2 produced to O2 consumed, is computed continuously and used to infer the primary metabolic substrate being utilized, providing information about organ nutritional status without requiring direct amino acid measurement. Organ developmental trajectory models, pre-computed for each organ type and developmental phase, define expected time-courses for all measured and derived parameters. The control system operates primarily in trajectory-following mode, modulating perfusion parameters to maintain the organ on its expected developmental curve. Significant deviation from expected trajectory triggers exception alerts and escalated monitoring. This approach minimizes sensor complexity while providing robust control, recognizing that a growing organ follows conserved developmental programs that can be accurately predicted in advance.
+
+
+5.3 Perfusate Composition Management. Nutrient replenishment is provided by controlled infusion from supplemental reservoirs containing glucose, amino acid mixtures including glutamine, growth factors, hormones including insulin, vitamins including ascorbate for collagen synthesis, and other organ-specific supplements. Infusion rates are modulated based on arteriovenous consumption measurements and developmental trajectory requirements. Periodic partial perfusate exchange dilutes accumulating cytokines and inflammatory mediators on a schedule determined by expected generation rates for the organ type and developmental phase.
+
+
+6. Multi-Stage Waste Processing Subsystem
+The multi-stage waste processing subsystem 150 processes venous return perfusate before recirculation through the arterial circuit, removing cellular debris, metabolic waste products, inflammatory mediators, and excess heat.
+
+
+The first processing stage employs a wavelength-matched acoustic microfluidic fractionation module 151 of the type described in the co-pending related application, comprising a 1-millimeter internal height microchannel with PMUT arrays lining opposing top and bottom faces driven at whisper-power levels. This geometry matches the channel height to one acoustic wavelength in water at approximately 1.5 MHz, focusing cells to the channel midplane while generating acoustic streaming body forces on the fluid medium that translate localized fluid slugs carrying cells as viscous passengers. Viable cells are translated from the fouled venous return stream into a clean recirculation stream through coordinated sequential fluid slug handoff between adjacent PMUT element groups, followed by acoustic trimming at the stream interface to minimize fouled fluid carryover. Dead cells, membrane fragments, and acellular debris are not selected for slug transport and remain in the waste stream. The dual-face PMUT configuration enables gravity-independent operation: in the terrestrial one-gravity environment the lower PMUT array provides gravitational compensation to maintain cells at the midplane node; in microgravity this power allocation is redistributed to enhanced lateral steering, providing improved fractionation performance per unit power in the orbital operating environment. This stage operates continuously without membrane fouling or replacement requirements.
+
+
+The second processing stage employs hollow fiber dialysis membranes or sorbent cartridges 152 to remove small-molecule metabolic waste products including ammonia, urea, creatinine, and uric acid that pass through the acoustic separation stage. Sorbent cartridges comprising activated charcoal and ion-exchange resins in series are preferred for their simplicity and compatibility with the disposable single-patient use model.
+
+
+The third processing stage employs protein-binding sorbent materials 153, such as styrene-divinylbenzene copolymer sorbents of the class commercially exemplified by CytoSorb, to remove cytokines and inflammatory signaling molecules accumulated in the perfusate circuit. Cartridge replacement follows a schedule determined by expected cytokine generation rate for the organ type and phase.
+
+
+The fourth stage provides temperature normalization 154 of the returning perfusate to the target operating temperature of 37 degrees Celsius, removing metabolic heat generated by the perfused organ, which otherwise accumulates in the closed circuit.
+
+
+Following the four waste processing stages, the perfusate passes through the oxygen and nutrient replenishment stations before return to the arterial circuit.
+
+
+7. Hyperbaric Aqueous Operating Environment
+In preferred embodiments, the complete perfusion system operates within a sealed hyperbaric aqueous environment 160 maintained at approximately 37 degrees Celsius and 2 atmospheres absolute pressure. This environment provides several advantages over atmospheric air-based operation. Elevated pressure thermodynamically destabilizes gas microbubbles, causing them to dissolve rather than grow, substantially reducing embolic risk. The doubled ambient pressure doubles the dissolved gas carrying capacity of aqueous media per Henry's Law. The constant 37 degree Celsius temperature eliminates the need for active thermal management of the organ environment, requiring only containment of thermal differences rather than active heating. In microgravity operation, the aqueous environment provides isotropic support of the organ construct without gravitational deformation, and eliminates the orientation-dependence of bubble management that would affect gas-phase systems. In microgravity, fluid management within the perfusion circuit is substantially simplified because buoyancy-driven convection, gravitational settling of cells and debris, and orientation-dependent flow distribution are all absent; fluid behavior is governed entirely by applied pressures and surface tension, both of which are fully controlled by the hydraulic system architecture. This makes the microgravity operating environment in several respects more controllable than terrestrial operation, not less. Lymphatic drainage requires additional active drive in microgravity to compensate for absent gravity-assisted interstitial flow; the lymphatic circuit flow rate is automatically increased in microgravity operation as described in Section 3.3. The acoustic fractionation module of the waste processing subsystem provides improved performance per unit power in microgravity as described in the co-pending related application, with power previously allocated to gravitational compensation in the terrestrial environment redistributed to enhanced cell steering in microgravity.
+
+
+Electronic control systems and other components sensitive to pressure and liquid immersion are housed within sealed gas-filled enclosures maintained at ambient pressure within the hyperbaric environment, providing the necessary thermal management and electrical isolation while allowing full integration with the perfusion system.
+
+
+CLAIMS
+What is claimed is:
+
+
+1. An integrated organ perfusion system comprising: a pulsatile hydraulic pump subsystem comprising a plurality of flexible compression chambers fabricated from biocompatible elastomeric material, each surrounded by a hydraulic fluid jacket driven by a servo-actuated pump, and trileaflet valve assemblies at each chamber inlet and outlet; a three-circuit vascular analog comprising an arterial circuit, a venous circuit, and a lymphatic circuit, each operating at distinct pressure regimes and replicating the hemodynamic characteristics of the corresponding native vascular compartment; a dissolved-phase gas management subsystem providing oxygen delivery and carbon dioxide removal without introduction of a free gas phase into the perfusate circuit; and a closed-loop bioprocess control subsystem monitoring arteriovenous biomarker differentials and modulating pump parameters, gas management rates, and nutrient delivery in response.
+
+
+2. The system of claim 1, wherein all perfusate-contacting components of the pump subsystem are fabricated by additive manufacturing with patient-specific dimensions derived from vascular imaging data of the intended organ recipient.
+
+
+3. The system of claim 1, wherein the plurality of flexible compression chambers comprises between two and twelve chambers arranged in series with programmable phase offsets providing synthesis of any specified cardiac pressure waveform.
+
+
+4. The system of claim 1, wherein the hydraulic fluid jackets are driven by brushless DC servo-actuated syringe pumps providing sub-microliter volumetric accuracy.
+
+
+5. The system of claim 1, wherein the trileaflet valve assemblies comprise three flexible leaflets fabricated from fiber-reinforced biocompatible elastomer with principal fiber direction aligned to the principal stress direction under operating load.
+
+
+6. The system of claim 1, wherein the arterial circuit exhibits graduated compliance decreasing from the pump outlet toward the capillary bed, replicating the Windkessel effect of native elastic arteries.
+
+
+7. The system of claim 1, wherein the venous circuit comprises a peristaltic assist mechanism driven by a dedicated low-pressure hydraulic subsystem replicating skeletal muscle pump action, and bicuspid check valves preventing retrograde flow under any orientation including microgravity.
+
+
+8. The system of claim 1, wherein the lymphatic circuit operates at controlled sub-atmospheric pressure relative to the interstitial compartment, providing continuous drainage of interstitial fluid and macromolecular waste through protein-retaining drainage channels.
+
+
+9. The system of claim 1, wherein the dissolved-phase gas management subsystem comprises an electrolysis cell generating dissolved oxygen at a rate modulated by feedback from dissolved oxygen sensors on the arterial and venous sides of the organ circuit.
+
+
+10. The system of claim 9, wherein the electrolysis rate is controlled to replace oxygen consumed by the perfused organ as determined by the arteriovenous dissolved oxygen difference, maintaining arterial dissolved oxygen tension within a target physiological range.
+
+
+11. The system of claim 1, wherein the dissolved-phase gas management subsystem comprises a carbon dioxide removal element selected from electrochemical CO2 capture cells and regenerable amine-based chemical scrubbers, controlled by feedback from pH sensors and dissolved CO2 sensors.
+
+
+12. The system of claim 1, wherein the closed-loop bioprocess control subsystem continuously computes the respiratory quotient from arteriovenous differences in dissolved oxygen and carbon dioxide to infer primary metabolic substrate utilization.
+
+
+13. The system of claim 1, wherein the closed-loop bioprocess control subsystem employs pre-computed organ developmental trajectory models defining expected time-courses for all measured biomarkers, operating primarily in trajectory-following mode and generating exception alerts upon significant deviation.
+
+
+14. The system of claim 1, further comprising a multi-stage waste processing subsystem comprising in sequence: a piezoelectric micromachined ultrasonic transducer phased array acoustic separation stage deflecting cellular debris into a waste stream; a small-molecule waste removal stage employing dialysis membranes or sorbent cartridges; a cytokine removal stage employing protein-binding sorbent materials; and a temperature normalization stage.
+
+
+15. The system of claim 1, wherein the system operates within a sealed hyperbaric aqueous environment maintained at approximately 37 degrees Celsius and between 1.5 and 3 atmospheres absolute pressure.
+
+
+16. The system of claim 15, wherein operation at elevated pressure thermodynamically destabilizes gas microbubbles by increasing dissolved gas partial pressure above bubble nucleation thresholds.
+
+
+17. The system of claim 1, wherein all perfusate-contacting components are fabricated as single-patient-use disposable elements, eliminating sterilization reprocessing requirements.
+
+
+18. A method of perfusing an ex vivo organ or tissue construct comprising: circulating perfusate through a three-circuit vascular analog replicating arterial, venous, and lymphatic hemodynamics simultaneously; maintaining dissolved oxygen and carbon dioxide in the perfusate within physiological ranges without introduction of a free gas phase; continuously measuring arteriovenous differences in dissolved oxygen, pH, lactate, and glucose; and modulating pump parameters, oxygen generation rate, CO2 removal rate, and nutrient delivery in response to measured arteriovenous differences to maintain the organ on a pre-computed developmental trajectory.
+
+
+19. The method of claim 18, further comprising operating the three-circuit vascular analog in a sealed hyperbaric aqueous environment at elevated pressure to prevent gas bubble nucleation and enhance dissolved gas carrying capacity.
+
+
+20. The method of claim 18, wherein perfusate-contacting components of the system have patient-specific dimensions derived from vascular imaging data of the organ recipient, matching luminal diameters and branching geometry to minimize pressure mismatch at anastomosis points.
+
+
+21. A pulsatile hydraulic pump for organ perfusion comprising: a plurality of flexible biocompatible compression chambers arranged in series; a hydraulic fluid jacket surrounding each compression chamber; a servo-actuated incompressible fluid driver controlling fluid admission and withdrawal from each jacket independently; trileaflet valve assemblies at each chamber inlet and outlet with independently programmable opening and closing timing; and a control system providing programmable phase offsets between chambers to synthesize any specified arterial pressure waveform.
+
+
+22. The pump of claim 21, wherein the compression chambers and valve assemblies are fabricated by additive manufacturing in patient-specific dimensions from biocompatible elastomeric materials.
+
+
+ABSTRACT
+An integrated organ and tissue perfusion system provides ex vivo support for organs, tissue constructs, and limbs during manufacturing, maturation, preservation, and repair. The system comprises a pulsatile hydraulic pump with patient-specific additively manufactured flexible compression chambers driven by servo-actuated water hydraulics; a three-circuit vascular analog simultaneously replicating arterial, venous, and lymphatic hemodynamics; a dissolved-phase gas management subsystem providing oxygen delivery and carbon dioxide removal without a free gas atmosphere through electrolysis and electrochemical scrubbing; a closed-loop bioprocess control subsystem using arteriovenous biomarker differentials to modulate all system parameters; and a multi-stage waste processing train incorporating acoustic cell debris separation. The system operates within a sealed hyperbaric aqueous environment at 2 atmospheres and 37 degrees Celsius, providing elevated dissolved gas carrying capacity and elimination of gravitational dependencies enabling operation in both microgravity and terrestrial environments. All perfusate-contacting components are fabricated as patient-specific disposable elements by additive manufacturing.
+
+
+BRIEF DESCRIPTION OF DRAWINGS
+FIG. 1 is a system block diagram showing the six primary subsystems and their interconnections.
+FIG. 2 is a schematic cross-section of a compression chamber showing the flexible chamber wall, hydraulic fluid jacket, and hydraulic inlet/outlet connections.
+FIG. 3 is a schematic of the trileaflet valve assembly showing three flexible leaflets in open and closed configurations.
+FIG. 4 is a circuit diagram of the three-circuit vascular analog showing arterial, venous, and lymphatic pathways and their pressure relationships.
+FIG. 5 is a schematic of the dissolved-phase gas management subsystem showing the electrolysis cell, CO2 scrubber, and sensor feedback loops.
+FIG. 6 is a block diagram of the closed-loop bioprocess control subsystem showing sensor inputs, trajectory model comparison, and actuator outputs.
+FIG. 7 is a schematic of the multi-stage waste processing train showing acoustic separation, dialysis, cytokine removal, and temperature normalization stages in series.
+FIG. 8 is a cross-section of the hyperbaric aqueous operating environment showing the perfusion system, organ construct, and electronic enclosures.
+Page  of

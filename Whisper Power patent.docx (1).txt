@@ -1,0 +1,295 @@
+﻿Whisper-Power PMUT Architecture
+Patent Application 
+UNITED STATES PATENT APPLICATION
+Non-Provisional Application
+WHISPER-POWER ACOUSTIC TRANSDUCER ARCHITECTURE
+FOR BIOLOGICAL CELL POSITIONING IN
+MICROGRAVITY FLUID ENVIRONMENTS
+Inventor: Jimmy Brake
+
+
+________________
+
+
+I. FIELD OF THE INVENTION
+The present invention relates to acoustic transducer systems for manipulating biological cells in fluid environments, and more specifically to a dense array architecture of piezoelectric micromachined ultrasonic transducers (PMUTs) operating at power levels below the mechanotransduction activation threshold of metabolically dormant mammalian cells. The architecture provides volumetric cell positioning in microgravity fluid environments without substrates, reflectors, channel walls, or magnetic fields.
+This architecture is the foundational hardware principle underlying all subsystems in an integrated tissue manufacturing platform, including bioreactor cell extraction, cell transport conveyance, cell staging and tribe formation, and precision deposition. Each subsystem is a specific implementation of the same architectural principle at different scales and configurations.
+________________
+
+
+II. BACKGROUND OF THE INVENTION
+The State of Acoustic Cell Manipulation
+Acoustic tweezers for biological cell manipulation have been extensively developed over the past two decades. Published systems use acoustic radiation force to trap, translate, pattern, and release individual cells. The technology has demonstrated forces of 1 to 200 piconewtons on individual cells, sufficient for precise positioning without cellular damage in actively metabolizing cells at physiological temperature.
+All existing acoustic cell manipulation systems share a common architectural assumption: a small number of relatively high-power transducer elements generate acoustic fields within physically constrained volumes, typically microfluidic channels with dimensions of tens to hundreds of micrometers. Cells are manipulated within these channels, with channel walls serving as acoustic reflectors that create standing wave patterns. Positioning resolution is achieved through amplitude control of individual transducers or through surface acoustic wave interference patterns.
+Limitations of Existing Architectures
+Existing acoustic manipulation architectures are fundamentally unsuited for manufacturing-scale tissue assembly for three independent reasons.
+Constrained geometry. Microfluidic channel-based systems process cells in planar or linear arrangements. They cannot position cells in three-dimensional free-fluid volumes because their acoustic fields depend on channel wall reflections for standing wave formation. Removing the channel walls eliminates the standing wave patterns that create trapping points.
+High per-element power. Existing systems compensate for having few transducer elements by driving each element at relatively high power. This is necessary to generate sufficient acoustic radiation force to overcome gravitational settling and create well-defined trapping points over distances of hundreds of micrometers to millimeters. Published systems report individual element drive levels producing radiation forces of 50 to 200 piconewtons per cell. These force levels are safe for metabolically active cells at 37 degrees Celsius, where cells actively sense and repair mechanical perturbation through mechanotransduction pathways, cytoskeletal remodeling, and membrane repair mechanisms.
+Incompatibility with metabolically dormant cells. At hypothermic temperatures of 0 to 10 degrees Celsius, the lipid bilayer of mammalian cell membranes transitions toward gel phase. Membrane fluidity decreases substantially. The cytoskeleton becomes static and cannot dynamically remodel in response to mechanical stress. Mechanosensitive ion channels are functionally impaired. Active repair mechanisms are suppressed to 5 to 10 percent of normal activity by the Q10 effect. A dormant cell at 4 degrees Celsius cannot defend itself against acoustic forces that an active cell at 37 degrees Celsius tolerates routinely. Every biocompatibility study in the acoustic tweezers literature has been conducted on actively metabolizing cells that are fighting back. Those results do not apply to dormant cells.
+The Closed Constraint Loop
+The present invention arises from the recognition that three physical constraints form a closed dependency loop in which each constraint demands the other two:
+Metabolic dormancy at 4 degrees Celsius is required for tissue assembly because it eliminates the timing mismatch between assembly duration and cell survival. But dormancy renders cells unable to self-repair, demanding ultra-gentle acoustic handling with per-element forces far below the levels used in existing systems.
+Ultra-gentle acoustic handling requires dense arrays of low-power transducer elements where positioning resolution derives from spatial density of emitters rather than amplitude of acoustic field. But at such low power levels, the acoustic radiation force is insufficient to overcome gravitational settling on Earth.
+Microgravity eliminates the dominant force that existing acoustic systems must overpower. In microgravity, the acoustic energy budget is devoted entirely to positioning precision rather than fighting gravity. This is the only environment in which ultra-gentle acoustic handling achieves sufficient positioning force for manufacturing-scale cell placement.
+Remove any one of these three constraints and the system fails. No prior art addresses all three simultaneously because no prior work has started from the premise of assembling metabolically dormant cells into tissue constructs.
+The Architectural Inversion
+Existing acoustic manipulation systems use few transducers at high power. The present invention inverts this architecture: many transducers at low power. The analogy is not a few spotlights illuminating a stage but a million candles, each barely flickering, whose combined light can be sculpted into any shape because each one is independently controlled.
+This inversion is not an incremental improvement to existing acoustic tweezers. It is a different architecture operating in a different physical regime for a different application domain. The present specification defines that architecture, its operating regime, and the seven fundamental operations it enables.
+________________
+
+
+III. SUMMARY OF THE INVENTION
+The present invention provides an acoustic cell positioning system comprising dense arrays of piezoelectric micromachined ultrasonic transducers (PMUTs) at element pitches of 20 to 100 micrometers, operating in a microgravity fluid environment at hypothermic temperature, wherein per-element acoustic radiation force does not exceed 200 piconewtons, and wherein nominal operating force is approximately 2 piconewtons, representing approximately 1 percent of the maximum force output and approximately 0.01 percent of the maximum power dissipation per element.
+The architecture provides seven fundamental cell manipulation operations using the same physical array elements, differentiated only by the phase relationships and drive signals applied:
+Hold: Pressure node trapping in individual acoustic wells, maintaining cells in separated positions without cell-to-cell or cell-to-wall contact.
+Move: Phased-array traveling pressure differential transport, wherein a low-pressure zone forward of the cell and a high-pressure zone behind the cell are generated by coordinated destructive and constructive interference of multiple low-power elements, propagating sequentially along the transport path with acoustic streaming co-entrainment of surrounding fluid.
+Rotate: Phased-array torque application for controlled cell rotation about all axes, using asymmetric pressure distributions to apply net torque at forces insufficient to damage dormant cells.
+Sense: Multi-aspect pulse-echo acoustic interrogation for determination of cell position, size, acoustic impedance, orientation, and bond state, using the same transducer elements in receive mode.
+Dock: Convergent node translation bringing oriented cells together for guided cell-cell adhesion, with acoustic confirmation of bond formation via echo signature change.
+Separate: Divergent node translation for loosely bound cells, and resonant oscillatory bond fatigue for strongly adhered cells, wherein cyclic loading at frequencies producing differential strain across adhesion interfaces fatigues molecular bonds without exceeding cellular damage thresholds.
+Confirm: Echo signature discrimination between free cells, bound pairs, and mature tribes, providing continuous quality verification without interrupting manipulation operations.
+These seven operations are executed under a hierarchical declarative command architecture wherein higher-level controllers issue commands specifying desired outcomes, and local PMUT controllers autonomously interpret said commands into transducer drive signals based on local geometry and real-time conditions, without centralized waveform computation.
+________________
+
+
+IV. BRIEF DESCRIPTION OF THE DRAWINGS
+FIG. 1 is a diagram contrasting conventional acoustic tweezers architecture (few high-power transducers in constrained channels) with the whisper-power architecture (dense low-power transducer arrays in open fluid volume).
+FIG. 2 is a diagram of the closed constraint loop showing the mutual dependency between metabolic dormancy, ultra-gentle acoustic handling, and microgravity.
+FIG. 3 is a cross-section of the phased-array traveling pressure differential transport mechanism, showing destructive interference creating a low-pressure zone forward of a cell and constructive interference creating a high-pressure zone behind the cell, with sequential propagation along a relay chain.
+FIG. 4 is a diagram of acoustic orientation sensing via multi-aspect pulse-echo, showing how echoes from multiple transducer angles produce an orientation fingerprint from internal cell structures.
+FIG. 5 is a sequence diagram showing the tribe formation process: orientation sensing, controlled rotation, convergent docking, adhesion confirmation, and iterative tribe assembly.
+FIG. 6 is a diagram of the hierarchical declarative command architecture, showing the four control levels and the principle that each level specifies desired outcomes interpreted by the level below.
+FIG. 7 is a diagram of the relay chain architecture showing continuous acoustic custody with overlapping capture zones at 30 to 50 micrometer element pitch.
+FIG. 8 is a diagram of resonant oscillatory bond fatigue for cell separation, showing cyclic pressure oscillation producing differential strain across the adhesion interface.
+________________
+
+
+V. DEFINITION OF TERMS
+Acoustic Custody: The condition in which a cell is held by at least one acoustic field at every point during transport. There is no ballistic phase. There is no coasting. The cell is continuously under acoustic control from origin to destination.
+Acoustic Streaming Co-Entrainment: The phenomenon whereby nonlinear acoustic interactions with the fluid medium create steady bulk fluid flows in the direction of sound propagation. In the traveling pressure differential transport mechanism, acoustic streaming entrains fluid local to the cell such that the cell and its surrounding fluid move together, reducing viscous shear on the cell relative to transport through stationary fluid.
+Acoustic Well: A pressure node created by phased-array transducer elements in which an individual cell is trapped and maintained in suspension without contact with other cells or physical surfaces. Each well provides continuous metabolic support via surrounding fluid circulation.
+Constructive Interference: The superposition of acoustic waves from two or more transducer elements driven at phase relationships that produce reinforcement at a target point, creating a pressure maximum. Used to generate the high-pressure zone behind a cell during traveling pressure differential transport.
+Convergent Node Translation: The controlled reduction of separation between two or more acoustic trapping nodes, bringing the cells held in those nodes into close proximity for guided adhesion. The phase relationships of participating transducer elements are adjusted to move the pressure nodes closer together while maintaining orientation control on the cells.
+Declarative Command: An instruction specifying a desired outcome without specifying how to achieve it. In the hierarchical command architecture, each control level issues declarative commands to the level below. A zone controller commands a deposition unit to accept cell type X and deliver to position Y. The deposition unit controller commands its PMUT array to generate the transport fields required. No level above the local PMUT controller generates or specifies individual transducer waveforms.
+Destructive Interference: The superposition of acoustic waves from two or more transducer elements driven at phase relationships that produce cancellation at a target point, creating a pressure minimum. Used to generate the low-pressure zone forward of a cell during traveling pressure differential transport.
+Divergent Node Translation: The controlled increase of separation between two or more acoustic trapping nodes, pulling apart cells held in those nodes. The reverse operation of convergent node translation. Used for separating loosely bound cells.
+Dormancy Temperature: A temperature in the range of 0 to 10 degrees Celsius, preferably 2 to 6 degrees Celsius, at which mammalian cell metabolism is reduced to approximately 5 to 10 percent of normal physiological levels by the Q10 effect. At this temperature, the cell membrane lipid bilayer transitions toward gel phase, the cytoskeleton is static, mechanosensitive ion channels are impaired, and active repair mechanisms are suppressed.
+Gel-Phase Transition: The change in mammalian cell membrane lipid bilayer from the fluid (liquid-crystalline) phase at physiological temperature to the gel (solid-ordered) phase at hypothermic temperature. This transition reduces membrane fluidity, impairs mechanotransduction, and increases cell vulnerability to mechanical forces.
+Intrinsic Acoustic Isolation: The property of the whisper-power operating regime in which the acoustic field from each transducer element does not propagate significantly beyond its nearest-neighbor capture zone. Isolation between adjacent cell paths is achieved through insufficient energy to propagate far, not through engineered barriers. Crosstalk is physically impossible at the operating power level.
+Mechanotransduction Activation Threshold: The minimum mechanical force at which a cell activates mechanosensitive signaling pathways including ion channel gating, cytoskeletal remodeling, and gene expression changes. In metabolically active cells at 37 degrees Celsius, this threshold is well characterized. In dormant cells at 4 degrees Celsius, mechanotransduction pathways are suppressed but mechanical damage can still occur because the cell cannot mount a repair response. The present invention operates below this threshold at all times.
+Multi-Aspect Pulse-Echo: Acoustic interrogation of a cell from multiple angles using transducer elements surrounding the cell. Each angle produces an echo encoding the acoustic impedance profile along that line of sight. The set of echoes from multiple angles provides an orientation fingerprint based on internal cell structures including the nucleus, organelles, and membrane geometry. This is not imaging. It is acoustic attitude determination, analogous to satellite star-tracker orientation sensing.
+Phased-Array Traveling Pressure Differential: A transport mechanism comprising a low-pressure zone ahead of the cell and a high-pressure zone behind the cell, both generated by coordinated interference of multiple low-power transducer elements. The pressure differential propagates along the transport path by sequential reassignment of element phase relationships as the cell advances. The cell rides within the moving pressure differential rather than being pushed through stationary fluid.
+Relay Chain: A transport architecture comprising densely packed transducer elements at pitches of 20 to 100 micrometers, wherein each element's acoustic capture zone overlaps slightly with its neighbors, creating a continuous chain with no dead zones. Each element accepts a cell from its upstream neighbor and hands it off to its downstream neighbor. Each handoff covers 30 to 100 micrometers. The cell is never in free flight.
+Resonant Oscillatory Bond Fatigue: A cell separation mechanism wherein one or both cells in a bound pair are subjected to oscillatory acoustic loading at a frequency that produces differential strain across the adhesion interface. Each cycle does not break the bond. Cumulative cycles fatigue the molecular adhesion bonds, producing separation without exceeding the force threshold that would damage either cell. The effective frequency range is determined by cell size and fluid viscosity such that the cell's inertia creates a phase lag between cell body motion and adhesion contact point strain.
+Thermal Silence: The property of the whisper-power operating regime in which total array thermal load is negligible. Because power dissipation scales as the square of drive amplitude, operating at 1 percent of force capacity produces approximately 0.01 percent of maximum power dissipation per element. A dense array of millions of elements, each dissipating microwatts instead of milliwatts, maintains thermal stability in the hypothermic build environment.
+Whisper Power: The operating regime in which each transducer element generates acoustic radiation force at approximately 1 percent of its maximum output, corresponding to approximately 0.01 percent of maximum power dissipation. At nominal operating force of approximately 2 piconewtons per element, this force is sufficient to overcome Brownian motion in microgravity fluid environments (signal-to-noise ratio of 20 to 200 over thermal noise) while remaining far below the 200 piconewton damage threshold established for metabolically active cells. The whisper-power regime is viable only in microgravity, where gravitational forces are negligible and do not require acoustic compensation.
+________________
+
+
+VI. DETAILED DESCRIPTION OF THE INVENTION
+A. Physics Foundation
+Force Requirements in Microgravity
+The acoustic radiation force required to transport a biological cell through a fluid medium is determined by the viscous drag on the cell. For a spherical cell of diameter 10 micrometers moving at velocity 1 millimeter per second through aqueous medium at 4 degrees Celsius, the Stokes drag force is:
+F = 6πηrv ≈ 0.14 nanonewtons
+where η is the dynamic viscosity of water at 4 degrees Celsius (approximately 1.5 millipascal-seconds), r is the cell radius (5 micrometers), and v is the transport velocity (1 millimeter per second).
+This force of 0.14 nanonewtons is the drag on a cell moving through stationary fluid. The phased-array traveling pressure differential transport mechanism described herein entrains local fluid with the cell via acoustic streaming, reducing the effective drag by an estimated factor of 10 to 100. The net force required to maintain a cell centered within a traveling pressure differential is therefore on the order of 1 to 14 piconewtons.
+In a microgravity environment at approximately 10 to the negative 6 g, the gravitational force on a 10 micrometer cell is approximately 0.000001 piconewtons, which is negligible. The dominant stochastic force is Brownian motion. At 4 degrees Celsius in aqueous medium, thermal energy kT is approximately 3.8 times 10 to the negative 21 joules. For a 10 micrometer cell, the root-mean-square displacement from Brownian motion is approximately 0.1 micrometers per second. An acoustic radiation force of 2 piconewtons creates a deterministic drift velocity approximately 5000 times greater than the Brownian displacement rate. Acoustic control dominates thermal noise by a factor of approximately 5000.
+Operating Regime Specification
+A typical PMUT element at modest drive voltage generates acoustic radiation forces of 1 to 100 nanonewtons on a 10 micrometer cell. At the nominal operating force of 2 piconewtons, each transport element operates at approximately 0.002 to 0.2 percent of its available force output. This extreme underutilization is the source of three compounding advantages:
+Thermal silence. Power dissipation scales as the square of drive amplitude. Operating at 1 percent of force capacity means operating at approximately 0.01 percent of maximum power per element. A dense array of ten million transport PMUTs, each dissipating microwatts instead of milliwatts, produces a total thermal load that is negligible. The hypothermic build environment is not disturbed by the acoustic system.
+Intrinsic acoustic isolation. Acoustic range scales with drive amplitude. A low-power wave from a transport PMUT barely reaches beyond its nearest-neighbor cell path. The field produced by each element is an inherently local acoustic bubble, just large enough to hand a cell to the next element. Isolation between adjacent cell paths is achieved through the simple physics of insufficient energy to propagate far. Crosstalk is physically impossible at the operating power level without any additional design effort.
+Cell safety margin. The published damage threshold for metabolically active mammalian cells at 37 degrees Celsius is 200 piconewtons (Baudoin et al., Nature Communications, 2020). At dormancy temperature of 4 degrees Celsius, cells lose the ability to self-repair through mechanotransduction, cytoskeletal remodeling, and membrane repair mechanisms. The 200 piconewton threshold is therefore adopted as the absolute ceiling for dormant cells, which is conservative because the actual damage threshold at 4 degrees Celsius is likely lower. The nominal operating force of 2 piconewtons represents 1 percent of this ceiling, providing a 100-fold safety margin.
+Force Budget Summary
+Parameter
+	Value
+	Notes
+	Published damage threshold (37°C)
+	200 pN
+	Active cells, self-repairing
+	Maximum permitted force (4°C)
+	200 pN
+	Conservative ceiling for dormant cells
+	Nominal operating force
+	2 pN
+	1% of ceiling; sufficient for 0g transport
+	Brownian force at 4°C
+	0.01–0.1 pN
+	Thermal noise floor
+	Gravitational force in LEO
+	≈10⁻⁶ pN
+	Negligible
+	Signal-to-noise (acoustic/Brownian)
+	20–200×
+	Deterministic control assured
+	Typical PMUT max force
+	1–100 nN
+	Operating at 0.002–0.2% capacity
+	Power dissipation at 1% force
+	≈0.01% of max
+	Thermal silence
+	________________
+
+
+B. Phased-Array Traveling Pressure Differential Transport
+Referring to FIG. 3, the transport mechanism comprises the coordinated operation of at least four transducer elements at any given moment: at least two elements ahead of the cell and at least two elements behind the cell.
+The at least two forward elements are driven with phase relationships that produce destructive interference at a target point ahead of the cell, creating a pressure minimum. Acoustic radiation force drives the cell toward this minimum.
+The at least two rearward elements are driven with phase relationships that produce constructive interference at a target point behind the cell, creating a pressure maximum. Acoustic radiation force drives the cell away from this maximum.
+The cell resides in the pressure gradient between the forward minimum and the rearward maximum, simultaneously pulled forward and pushed from behind. The nonlinear acoustic interaction with the surrounding fluid creates streaming flows in the same direction as the pressure differential propagation, entraining fluid local to the cell. The cell and its surrounding fluid pocket move together, reducing viscous shear on the cell relative to transport through stationary fluid.
+As the cell advances by one element pitch, the phase relationships are reassigned. Elements that generated the forward low-pressure zone become the rearward high-pressure zone generators. The next elements ahead assume forward minimum duty. The pressure differential walks forward through the array one element at a time. Each individual element operates at whisper power. The shaped pressure differential is an emergent property of coordinated phase relationships between neighbors, not the output of any single high-power source.
+Relay Chain Continuity
+Referring to FIG. 7, the transport PMUT elements are packed at element pitches of 30 to 50 micrometers. Each element's acoustic capture zone overlaps slightly with its neighbors, creating a continuous chain with no dead zones. A cell arriving in element N's capture zone receives a whisper-nudge sufficient to drift the cell toward element N+1. Element N+1 catches the cell with its own acoustic field and nudges it toward element N+2. Each handoff covers 50 to 100 micrometers.
+At a cell velocity of 1 millimeter per second and a relay spacing of 50 micrometers, each element holds the cell for approximately 50 milliseconds before handing it off. This is an extended duration in acoustic terms. There is no precision timing requirement. Each element accepts, pushes, and releases without urgency.
+The cell is never in free flight. There is no ballistic phase. There is no coasting. At every point in its transit, the cell is held by at least one acoustic field. This condition is defined as acoustic custody. Acoustic custody is maintained from the moment a cell is extracted from its reservoir to the moment it is bonded to the tissue construct.
+Wide-Envelope Shear Protection
+The traveling pressure differential envelope is sized substantially larger than the cell, preferably 10 to 50 cell diameters across in at least two dimensions. This creates a wide co-moving fluid volume with the cell positioned at its center. The shear zone where fast-moving entrained fluid meets stationary surrounding medium is displaced far from the cell surface.
+This wide envelope is critical for metabolically dormant cells. At 4 degrees Celsius, the cell membrane is in or transitioning toward gel phase and cannot self-repair. Any shear gradient across the membrane surface is an unrecoverable damage risk. A narrow envelope with steep velocity gradients near the cell surface would expose dormant cells to shear forces they cannot tolerate. The wide envelope eliminates this risk by ensuring that the velocity gradient experienced at the cell surface is negligible.
+The wide envelope does not reduce transport velocity. The same 1 to 2 millimeters per second cell velocity is achieved by co-moving a larger fluid volume. The acoustic energy cost of the wider envelope is proportional to the additional fluid mass being entrained, which is easily accommodated within the whisper-power operating budget at 1 percent of element capacity. The system trades element count per bubble for cell safety, a trade that is unambiguously favorable given the massive element density of the array.
+Four-Phase Deposition Sequence
+Cell deposition from the transducer array onto the tissue construct follows a four-phase sequence that maintains continuous acoustic custody from transit through contact.
+Phase 1: Transit. The cell moves through the relay chain at full velocity within a wide pressure differential envelope. Maximum shear buffer. The cell is cocooned in a large co-moving fluid pocket.
+Phase 2: Approach. As the cell nears the tissue face, the pressure differential envelope progressively constricts. More elements participate in tightening the bubble. The cell's positional tolerance narrows from tens of micrometers to single micrometers. This is a precision funnel: wide and safe during transit, narrow and accurate for placement.
+Phase 3: Terminal guidance. In the final 50 to 100 micrometers before the tissue surface, the forward low-pressure zone degrades naturally. The tissue construct has different acoustic impedance than the build medium (approximately 1.5 to 1.6 MRayl for tissue versus approximately 1.5 MRayl for aqueous medium). The phased array's ability to project a clean destructive interference zone past the tissue surface boundary degrades. The forward pull weakens. This degradation is not a failure mode. It is the natural termination of the transport mechanism. The cell no longer needs forward pull at the moment when the physics stops providing it.
+Phase 4: Contact. The rearward high-pressure zone is reduced to zero when the cell is within nanometers of the tissue surface. At low Reynolds number, a 10 micrometer cell moving at 1 millimeter per second in aqueous medium coasts approximately 8.5 nanometers before viscous drag brings it to a complete stop. The cell drifts the final nanometers on residual fluid momentum and contacts the tissue surface at substantially zero relative velocity. Adhesion molecules or pre-placed adhesive elements bond the cell to the tissue construct at the moment of contact. The cell is released from acoustic custody only when it is physically bonded to its destination. There is no release-and-hope. There is custody to contact.
+Tissue Face as Natural Terminator
+The acoustic impedance mismatch at the tissue surface boundary provides a natural and physically inevitable termination of the forward transport field. This is not an engineered feature. It is a consequence of the fundamental difference in acoustic properties between the build medium and the growing tissue construct. As the tissue grows and accumulates mass, its impedance boundary becomes more defined, and the natural termination effect becomes more pronounced. The transport mechanism is self-limiting: it delivers cells to the tissue surface and cannot push them past it.
+Overlapping projected fields from neighboring deposition units provide lateral containment during the approach and terminal guidance phases. A cell exiting any single barrel enters the collective acoustic environment maintained by dozens of neighboring deposition units. Custody does not transfer from one unit to open space. It transfers from the barrel relay chain to the volumetric field maintained by the collective array. The build volume is a crystal cathedral of overlapping whisper-power fields from every deposition unit in the neighborhood.
+________________
+
+
+C. Acoustic Orientation Sensing
+Referring to FIG. 4, mammalian cells are not acoustically homogeneous spheres. Internal structures including the nucleus, organelles, cytoskeletal elements, and membrane geometry present different acoustic impedances when interrogated from different angles. The nucleus is denser and stiffer than the surrounding cytoplasm. Organelles scatter acoustic energy differently depending on viewing angle. Elongated cells such as neurons present dramatically different time-of-flight profiles along their long axis versus their short axis.
+The dense PMUT array surrounding each cell in its acoustic well provides multiple viewing angles for pulse-echo interrogation. Each transducer element can operate in transmit mode (emitting a short acoustic pulse) and receive mode (detecting the returning echo) within the same duty cycle. By pinging the cell from multiple angles in rapid succession, the system builds a multi-aspect echo profile.
+This profile encodes the cell's orientation as a small number of angular parameters, typically 2 to 3 values representing the orientation of the cell's primary asymmetric axis relative to the array coordinate frame. For elongated cells, the long axis is extracted directly from time-of-flight differences across viewing angles. For rounder cells, the nuclear offset from cell center provides an acoustic heavy side detectable in impedance measurements.
+This is acoustic attitude determination, not imaging. The data per cell is approximately 16 to 30 bytes per interrogation cycle. No image is constructed. The system determines which way the cell is pointing, not what it looks like.
+________________
+
+
+D. Phased-Array Torque for Controlled Cell Rotation
+Referring to FIG. 5, once orientation is determined, the cell must be rotated to the correct orientation for its intended tribe position. Controlled rotation is achieved by creating asymmetric pressure distributions across the cell using the same phased-array elements that provide trapping and transport.
+An asymmetric pressure gradient across the cell, with higher pressure on one side of a given axis and lower pressure on the other, creates a net acoustic radiation torque. The torque magnitude is controlled by the pressure differential, which is controlled by the phase relationships of participating elements. At whisper-power operating levels, the torque is small but the cell operates in a low Reynolds number fluid environment with negligible angular momentum. Viscous damping ensures smooth rotation to the target orientation without overshoot or oscillation.
+Rotation is controlled about all three axes by varying which elements contribute to the asymmetric field and with what phase relationships. The same elements that hold the cell in its acoustic well, and that just interrogated it to determine orientation, now shift their phase relationships to apply the required torque. No additional hardware is required.
+Rotation accuracy is verified by repeating the multi-aspect pulse-echo interrogation after rotation. If the cell has not reached the target orientation within tolerance, the torque field is adjusted and rotation continues. The feedback loop operates within the normal duty cycle of the array.
+________________
+
+
+E. Tribe Formation: Convergent Docking and Adhesion Confirmation
+Referring to FIG. 5, tribe formation combines orientation sensing, controlled rotation, and convergent node translation in an iterative assembly sequence. Tribe formation occurs at physiological temperature (37 degrees Celsius) where cellular adhesion molecules including cadherins and integrins are fully active, the cytoskeleton is functional, and survival signaling pathways operate normally.
+Two cells, each held in its own acoustic well and rotated to the correct mutual orientation, are brought together by convergent node translation. The phase relationships of transducer elements between the two cells are adjusted to move the two trapping nodes closer together at a controlled velocity. The relative orientation is maintained throughout the approach because the same elements applying translational force simultaneously maintain the rotational field.
+When the cells reach a separation of a few micrometers, surface adhesion molecules begin binding. Cadherins extend across the intercellular gap, form homophilic bonds, and recruit catenins to link to the cytoskeleton. This adhesion maturation requires seconds to minutes at 37 degrees Celsius. The acoustic field maintains both cells in position and orientation during the maturation window, serving as a clamp while the molecular bonds form.
+Adhesion is confirmed acoustically. Two cells bound together produce a different echo signature than two cells held separately at the same distance. The bound pair moves as a single acoustic unit. Echo characteristics including effective diameter, resonant frequency, and impedance profile change upon bonding. The system detects this transition and confirms successful docking.
+Additional cells are added to the growing tribe one at a time. Each new cell is oriented, docked to the existing cluster, and confirmed acoustically before the next cell is introduced. The tribe grows by iterative addition until the target tribe composition and geometry are achieved.
+________________
+
+
+F. Cell Separation: Divergent Translation and Resonant Bond Fatigue
+Referring to FIG. 8, cell separation is required for quality control, error recovery, and disassembly of failed tribe formations. Two separation mechanisms are provided.
+Divergent Node Translation
+The reverse of convergent docking. The trapping nodes holding the two cells are moved apart by adjusting the phase relationships of the participating transducer elements. If the adhesion bonds between the cells are weaker than the acoustic restoring force holding each cell in its respective node, the cells separate cleanly. This mechanism is sufficient for loosely associated cells, failed tribes where adhesion did not mature, and quality-rejected clusters.
+Resonant Oscillatory Bond Fatigue
+For strongly adhered cells that resist divergent translation, separation is achieved by cyclic mechanical loading of the adhesion interface. One or both cells are subjected to oscillatory acoustic pressure at a frequency that cyclically loads the adhesion bonds.
+Each individual loading cycle does not exceed the force required to break the bond. However, molecular adhesion bonds have a fatigue life: cumulative cyclic loading at sub-critical amplitude progressively weakens the bonds until separation occurs. The mechanism is analogous to bending a metal wire back and forth until it fractures.
+The effective frequency for bond fatigue is determined by the requirement that the cell's inertia create a phase lag between cell body motion and adhesion contact point strain. At too low a frequency, the cell and fluid move together with no differential loading across the interface. At too high a frequency, thermal dissipation dominates. For a 10 micrometer mammalian cell in aqueous medium, the effective range is estimated at tens to hundreds of kilohertz, well within the operating bandwidth of PMUT elements.
+Separation is confirmed by the same acoustic echo methods used to confirm docking: the echo signature transitions from bound pair to two free cells.
+________________
+
+
+G. Hierarchical Declarative Command Architecture
+Referring to FIG. 6, the whisper-power PMUT architecture operates under a hierarchical control system in which each level issues declarative commands specifying desired outcomes, and the level below interprets those commands into the specific actions required to achieve them. No level micromanages the level below. Each level speaks in terms of WHAT, never HOW. The HOW is always resolved one level down.
+Level 2: Build Controller
+The build controller monitors overall build progress and enforces quality abort thresholds. It issues commands to zone controllers specifying which elements (cells, tribes, materials) are to be placed at which positions in the tissue construct. It does not address individual deposition units.
+Level 1: Zone Controller
+Zone controllers manage 100 to 1000 deposition units. They decompose the build controller's commands into tasks for individual deposition units, specifying which cell types each unit should accept, stage, and deposit. They detect anomalies across their zone and execute corrective actions. They do not address individual PMUT elements.
+Level 0: Deposition Unit Controller
+Each deposition unit controller manages the staging, transport, and firing operations within its unit. It receives commands from the zone controller specifying cell type, quantity, sequence, and target coordinates. It interprets these commands into operations on its local PMUT array: extract cells from pipeline, stage in firing order, transport through the relay chain, orient cells, form tribes where required, and fire cells at target positions. It does not compute individual transducer waveforms.
+Local PMUT Controller
+The local PMUT controller is firmware resident in or adjacent to each transducer array section. It receives declarative commands from the deposition unit controller: hold this cell, move this cell to that position, rotate this cell to that orientation, dock these two cells, separate these cells. It autonomously generates the transducer drive signals required to execute each command, based on its knowledge of local array geometry, element positions, fluid properties, and real-time echo feedback. This is where waveforms are generated. They are generated locally, autonomously, and in near-real-time.
+Compute Architecture Implications
+This hierarchical declarative architecture eliminates the requirement for centralized waveform computation. Pre-computing every waveform for every PMUT element across every timestep for a billion-cell build would require petabytes of data. The declarative architecture reduces the central computation to a scheduling problem: which cells go where, in what order, via which deposition units. The local controllers carry the physics. The intelligence required to translate declarative commands into waveforms is distributed across the array and executed in firmware, not computed centrally and downloaded.
+________________
+
+
+H. The Ten Percent Principle
+The system operates at approximately 10 percent of theoretical maximum throughput. This margin purchases temporal slack for: error recovery (nine spare time-slots per active slot, permitting a failed cell to be rejected and replaced without downstream impact), inline quality filtering at every stage (inspect and reject without time pressure), and graceful degradation under fault conditions (absorb loss of half the channels and still complete the build within an acceptable timeframe).
+The 10 percent operating point is not waste. It converts knife-edge timing into comfortable margins for biological variability and equipment tolerances. The system can afford to be gentle and thorough because it has abundant time and capacity headroom.
+________________
+
+
+I. Distinction From Prior Art
+Parameter
+	Prior Art (Acoustic Tweezers)
+	Present Invention
+	Transducer count
+	2 to 64 elements
+	Millions of elements
+	Per-element power
+	High (50–200 pN per cell)
+	Whisper (≈2 pN per cell)
+	Environment
+	Microfluidic channels, 1g
+	Open fluid volume, microgravity
+	Standing wave source
+	Channel wall reflections
+	Phased array interference, no walls
+	Cell temperature
+	37°C (active metabolism)
+	0–10°C (dormant)
+	Cell self-repair
+	Active
+	Suppressed
+	Transport mechanism
+	SAW streaming or node shifting
+	Traveling pressure differential with co-entrainment
+	Isolation method
+	Physical barriers, frequency division
+	Intrinsic (insufficient power to propagate)
+	Control architecture
+	Centralized waveform generation
+	Hierarchical declarative, local waveform autonomy
+	Orientation control
+	Passive alignment only
+	Active sensing + controlled rotation
+	Throughput strategy
+	Speed per channel
+	Massive parallelism at low speed per channel
+	The present invention is not an improvement to existing acoustic tweezers. It is an inverted architecture operating in a different physical regime, enabled by an environment (microgravity) and a cell state (metabolic dormancy) that no prior system has been designed to exploit.
+________________
+
+
+J. Transducer Array Physical Specifications
+Element Geometry
+Individual PMUT elements are fabricated using standard MEMS processes on silicon substrates, preferably using aluminum nitride (AlN) or lead zirconate titanate (PZT) as the piezoelectric material. Element pitch is 20 to 100 micrometers, preferably 30 to 50 micrometers. Published PMUT array densities exceeding 1000 elements per square millimeter have been demonstrated in commercial applications including ultrasonic fingerprint sensors, confirming fabrication feasibility at the required density.
+Substrate Thinning
+For stacked array configurations such as the fire-and-guide assembly, silicon substrates are thinned to 50 to 100 micrometers using standard wafer thinning processes. This enables stacked configurations with total stack heights of less than 2 millimeters for multi-layer tractor beam assemblies. Channel gaps between substrate layers are 100 micrometers, matching the gun aperture dimension.
+Operating Frequency
+PMUT elements operate at frequencies of 1 to 100 megahertz depending on the specific subsystem function. Higher frequencies (20 to 100 megahertz) provide finer manipulation resolution for final positioning. Lower frequencies (1 to 10 megahertz) provide longer-range transport fields. The dense array architecture permits different regions of the same array to operate at different frequencies simultaneously.
+Dual-Mode Operation
+Each PMUT element operates in both transmit mode (acoustic manipulation) and receive mode (pulse-echo sensing) on a time-division multiplexed basis. Transmit duty cycles for manipulation are interleaved with receive windows for sensing. The same physical element performs both functions, switching between modes according to the local controller firmware. This eliminates the need for separate imaging and manipulation hardware.
+________________
+
+
+VII. CLAIMS
+What is claimed is:
+1. An acoustic cell positioning system comprising: a dense array of piezoelectric micromachined ultrasonic transducer (PMUT) elements at an element pitch of 20 to 100 micrometers; said array configured to operate in a fluid medium at a temperature of 0 to 10 degrees Celsius in a microgravity environment; wherein each PMUT element generates acoustic radiation force not exceeding 200 piconewtons on a biological cell; wherein nominal operating force per element is approximately 2 piconewtons, representing approximately 1 percent of the maximum force output; and wherein said array positions biological cells in a three-dimensional fluid volume without substrates, reflectors, channel walls, or magnetic fields.
+2. A method for transporting a biological cell through a fluid medium using an array of acoustic transducer elements, comprising: generating a low-pressure zone forward of the cell by driving at least two transducer elements at phase relationships yielding destructive interference at a target point ahead of the cell; simultaneously generating a high-pressure zone rearward of the cell by driving at least two transducer elements at phase relationships yielding constructive interference at a target point behind the cell; wherein the pressure differential envelope encompasses a fluid volume substantially larger than the cell, preferably 10 to 50 cell diameters across in at least two dimensions, such that shear gradients between co-moving entrained fluid and stationary surrounding medium are displaced from the cell surface by a distance sufficient to eliminate shear stress on the cell membrane; propagating said pressure differential along a transport path by sequential reassignment of element phase relationships as the cell advances; wherein acoustic streaming effects entrain fluid surrounding the cell to reduce viscous shear; and wherein each individual transducer element operates at acoustic radiation force output not exceeding 200 piconewtons, with the shaped pressure differential arising from phased superposition of multiple low-power sources.
+3. The system of claim 1, wherein total thermal load of the array is maintained below 1 milliwatt per square centimeter of array area at nominal operating power, wherein thermal silence is achieved by operating at approximately 0.01 percent of maximum power dissipation per element.
+4. The system of claim 1, wherein acoustic fields from individual elements do not propagate significantly beyond their nearest-neighbor capture zones, and wherein isolation between adjacent cell transport paths is achieved through insufficient acoustic energy to propagate beyond one element pitch, without engineered barriers or frequency division.
+5. The system of claim 1, wherein each PMUT element operates in both transmit mode for acoustic manipulation and receive mode for pulse-echo sensing on a time-division multiplexed basis, and wherein the same physical elements perform cell positioning, cell transport, orientation sensing, and bond state detection without separate imaging hardware.
+6. The system of claim 1, further comprising a hierarchical declarative command architecture wherein: a build controller issues commands specifying desired tissue element positions; zone controllers decompose said commands into tasks for individual deposition units; deposition unit controllers interpret tasks into operations on local PMUT arrays; and local PMUT controllers autonomously generate transducer drive signals based on local array geometry and real-time conditions; wherein no level above the local PMUT controller computes or specifies individual transducer waveforms.
+7. The system of claim 1, wherein cells are transported through a relay chain of densely packed transducer elements at pitches of 20 to 100 micrometers, wherein each element's acoustic capture zone overlaps with its neighbors creating a continuous chain with no dead zones, and wherein the cell is maintained in continuous acoustic custody at every point during transport with no ballistic or free-flight phase.
+8. The method of claim 2, wherein the fluid medium is at a temperature of 0 to 10 degrees Celsius, the biological cell is in a state of metabolic dormancy with metabolic activity reduced to 5 to 10 percent of physiological levels, and the cell membrane lipid bilayer is in or transitioning toward gel phase such that the cell cannot activate mechanotransduction pathways or perform cytoskeletal repair in response to mechanical perturbation.
+9. A method for determining the orientation of a biological cell in a fluid medium, comprising: interrogating the cell with acoustic pulses from a plurality of transducer elements at different angular positions surrounding the cell; receiving echoes from said pulses at said transducer elements; extracting orientation parameters from differences in echo characteristics across angular positions, wherein said characteristics include time-of-flight, reflection amplitude, and acoustic impedance profile; and determining the angular orientation of the cell's asymmetric axis relative to the transducer array coordinate frame without constructing an image of the cell.
+10. A method for controlled rotation of a biological cell, comprising: determining the cell's current orientation by multi-aspect pulse-echo interrogation as in claim 9; computing a target orientation based on the cell's intended position in a tissue construct; generating an asymmetric acoustic pressure distribution across the cell using phased-array transducer elements to apply net acoustic radiation torque about one or more axes; and verifying achieved orientation by repeating pulse-echo interrogation; wherein the applied torque is generated at force levels not exceeding the mechanotransduction activation threshold of the cell.
+11. A method for forming a multi-cell tribe using an acoustic transducer array, comprising: holding a first cell and a second cell in separate acoustic wells; determining the orientation of each cell by multi-aspect pulse-echo interrogation; rotating each cell to a target orientation using phased-array torque; reducing the separation between the acoustic wells by convergent node translation, bringing the cells together at controlled velocity while maintaining orientation; permitting adhesion molecules to bind at the cell-cell interface; and confirming adhesion formation by detecting a change in echo signature from two separate cells to a bound pair.
+12. The method of claim 11, further comprising iteratively adding additional cells to the growing tribe by: orienting each new cell to the correct angular position relative to the existing tribe; docking the new cell to the tribe by convergent node translation; confirming adhesion of the new cell; and repeating until the tribe reaches target composition.
+13. A method for separating adhered biological cells using an acoustic transducer array, comprising at least one of: (a) divergent node translation, wherein acoustic trapping nodes holding the cells are moved apart by adjusting phase relationships of participating transducer elements, separating cells whose adhesion bonds are weaker than the acoustic restoring force; or (b) resonant oscillatory bond fatigue, wherein one or both cells are subjected to oscillatory acoustic pressure at a frequency producing differential strain across the adhesion interface due to the phase lag between cell body inertia and adhesion contact point displacement, wherein cumulative cyclic loading at sub-critical amplitude progressively weakens adhesion bonds until separation occurs; and confirming separation by detecting a change in echo signature from bound pair to free cells.
+14. A method for depositing a biological cell from an acoustic transducer array onto a tissue construct, comprising: transporting the cell within a wide pressure differential envelope through a relay chain at transit velocity; progressively constricting the pressure differential envelope as the cell approaches the tissue surface to increase positional precision; wherein the forward low-pressure zone degrades naturally due to acoustic impedance mismatch at the tissue surface boundary; progressively reducing the rearward high-pressure zone to zero when the cell is within nanometers of the tissue surface; wherein the cell drifts the final nanometers on residual fluid momentum at substantially zero relative velocity and contacts the tissue surface; and wherein the cell is released from acoustic custody only upon physical bonding to the tissue construct via adhesion molecules or pre-placed adhesive elements.
+15. The method of claim 14, wherein overlapping projected acoustic fields from a plurality of transducer arrays maintain continuous acoustic custody of the cell across the distance between the array aperture and the tissue surface, such that the cell transitions from internal relay chain transport within a single array to a collective acoustic environment maintained by multiple neighboring arrays, and wherein the cell is never in uncontrolled free flight at any point between array aperture and tissue contact.
+16. The system of claim 1, wherein the system operates at approximately 10 percent of theoretical maximum throughput, wherein the remaining 90 percent of capacity provides temporal margin for error recovery, inline quality filtering, and graceful degradation under fault conditions.
+17. The system of claim 1, wherein PMUT elements are fabricated on silicon substrates using aluminum nitride or lead zirconate titanate piezoelectric material, at element pitches of 30 to 50 micrometers, with substrates thinned to 50 to 100 micrometers for stacked configurations, and wherein stacked configurations comprise channel gaps of approximately 100 micrometers between substrate layers.
+18. The system of claim 1, wherein the acoustic transducer array is configured to perform all seven of the following operations using the same physical transducer elements differentiated only by drive signal phase relationships: holding a cell in a pressure node, transporting a cell via traveling pressure differential, rotating a cell via asymmetric pressure torque, sensing cell orientation and bond state via multi-aspect pulse-echo, docking cells via convergent node translation, separating cells via divergent node translation or resonant oscillatory bond fatigue, and confirming state transitions via echo signature discrimination.
+________________
+
+
+ABSTRACT
+An acoustic cell positioning system and method comprising dense arrays of piezoelectric micromachined ultrasonic transducer (PMUT) elements at element pitches of 20 to 100 micrometers, operating in microgravity fluid environments at hypothermic temperature, wherein per-element acoustic radiation force does not exceed 200 piconewtons and nominal operating force is approximately 2 piconewtons. The architecture provides seven cell manipulation operations using the same physical elements: hold, move, rotate, sense, dock, separate, and confirm. Cell transport employs phased-array traveling pressure differentials generated by coordinated destructive and constructive interference of multiple low-power elements, with acoustic streaming co-entrainment of surrounding fluid. Cell orientation is determined by multi-aspect pulse-echo interrogation without imaging. Cell rotation is achieved by phased-array acoustic torque. Tribe formation combines orientation, rotation, convergent docking, and adhesion confirmation. Cell separation employs divergent node translation and resonant oscillatory bond fatigue. A hierarchical declarative command architecture enables local PMUT controllers to autonomously generate transducer drive signals from high-level outcome commands without centralized waveform computation.
+Page

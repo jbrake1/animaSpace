@@ -1,0 +1,205 @@
+﻿Non-Provisional Patent Application
+Deposition Unit Hardware
+
+
+
+
+UNITED STATES PATENT APPLICATION
+Non-Provisional Application
+
+
+DEPOSITION UNIT HARDWARE FOR ACOUSTIC CELL DEPOSITION
+IN MICROGRAVITY TISSUE MANUFACTURING
+
+
+Inventor: Jimmy Brake
+
+
+________________
+
+
+I. FIELD OF THE INVENTION
+The present invention relates to hardware for precision biological cell deposition, and more specifically to deposition unit devices comprising acoustic transducer arrays, tapered reservoir-to-barrel geometry, and whisper-power acoustic ejection mechanisms for depositing individual cells and pre-formed cell clusters (tribes) at micrometer-scale precision in a microgravity manufacturing environment.
+________________
+
+
+II. BACKGROUND OF THE INVENTION
+The Cell Deposition Problem
+Manufacturing thick vascularized tissue requires positioning individual cells and multi-cell clusters at specified three-dimensional coordinates with placement tolerances of approximately plus or minus five micrometers. At the cell densities required for functional organ tissue — approximately 500,000 to 600,000 cells per cubic millimeter in dense tissue — a lung-scale organ requires approximately 100 billion individual cell placement events.
+No existing deposition technology achieves this combination of throughput, precision, and cell viability. Conventional bioprinters use mechanical extrusion or inkjet mechanisms that impose shear forces damaging to dormant cells, operate at resolutions of 100 to 500 micrometers rather than 5 to 30 micrometers, and cannot maintain acoustic custody of cells during transit. Pipette-based systems operate serially and cannot approach the throughput required.
+The Acoustic Custody Requirement
+At the length scales of cell deposition, Newtonian fluid mechanics impose a fundamental constraint: at low Reynolds number (Re approximately 10 to the negative five for cells in aqueous medium), ballistic transport is physically impossible. A cell launched at one millimeter per second coasts approximately 8.5 nanometers before stopping due to viscous drag. This means that any cell transit distance exceeding nanometers requires continuous acoustic guidance throughout the entire transit. Cells cannot be launched and expected to arrive at a target; they must be continuously guided from source to destination.
+This constraint, combined with the requirement to avoid mechanical contact with dormant cells, defines the design space for the deposition unit: acoustic forces must be the sole mechanism for cell transport, guidance, and placement throughout the entire deposition process.
+Prior Art Limitations
+Acoustic printing systems described in prior art operate with single fixed-frequency transducers generating acoustic radiation force on cells in bulk suspension. These systems lack the phased array control required for simultaneous wide-envelope transit and narrow-terminal precision placement. They do not address the tribe-volume ejection mode, the tapered reservoir-to-barrel geometry, or the parallel simultaneous firing capability enabled by sub-millisecond transit times. None address the specific combination of MEMS-scale PMUT arrays, whisper-power operation, and microgravity cell magazine loading that characterizes the present invention.
+________________
+
+
+III. SUMMARY OF THE INVENTION
+The present invention provides a deposition unit device for precision acoustic cell deposition comprising: a tapered stylus body with a cell reservoir section of approximately one millimeter diameter transitioning to a firing barrel section of approximately 0.5 millimeter diameter; a PMUT phased array at the barrel face comprising ten or more individually addressable transducer elements; a whisper-power acoustic reservoir maintaining cells in hexagonal close-pack density without contact; a tribe-volume wide-envelope ejection mode enabling transit at approximately 44 times single-cell velocity; and a terminal field-narrowing mechanism providing micrometer-precision final placement without mechanical contact.
+The deposition unit solves the fundamental tradeoff between transit speed and placement precision by separating the deposition sequence into two acoustic phases: a wide-envelope high-velocity transit phase using tribe-scale acoustic volume, and a terminal narrowing phase that compresses the acoustic field to cell-scale precision at the tissue face. This approach achieves both maximum throughput and maximum accuracy within a single continuous acoustic operation.
+________________
+
+
+IV. BRIEF DESCRIPTION OF THE DRAWINGS
+FIG. 1 is a cross-sectional diagram of the deposition unit showing the tapered stylus geometry, the one millimeter reservoir section, the transition zone, and the 0.5 millimeter barrel face with PMUT array.
+FIG. 2 is a diagram of the PMUT phased array face showing element arrangement, inter-element spacing, and the central ejection aperture.
+FIG. 3 is a sequence diagram showing the two-phase deposition event: wide-envelope tribe-volume transit phase and terminal field-narrowing precision placement phase.
+FIG. 4 is a diagram showing the acoustic field geometry at the barrel face during wide-envelope mode versus narrow-terminal mode, with annotated beam widths and focal zones.
+FIG. 5 is a diagram of the hexagonal close-pack cell magazine within the reservoir section showing cell arrangement, acoustic standing wave node positions, and feed direction toward barrel.
+FIG. 6 is a crosstalk analysis diagram showing lateral field extent of a firing deposition unit at whisper-power and the negligible lateral displacement experienced by adjacent cells during 25-microsecond tribe-speed transit.
+________________
+
+
+V. DEFINITION OF TERMS
+Barrel Section: The distal 0.5 millimeter diameter portion of the deposition unit stylus containing the PMUT phased array and forming the ejection aperture. The barrel section narrows from the reservoir section and terminates at the firing face.
+Cell Magazine: The densely packed arrangement of dormant cells or tribes within the reservoir section, maintained in hexagonal close-pack configuration by whisper-power acoustic standing waves at approximately 4 degrees Celsius.
+Deposition Unit (DU): The complete mobile device described herein, comprising reservoir section, barrel section, PMUT array, and local controller, configured to receive pre-staged cells from a single pipeline input and deposit them at specified target positions within the build chamber.
+Field Narrowing: The terminal acoustic maneuver in which the PMUT phased array transitions from wide-envelope tribe-volume ejection mode to cell-scale focused mode by adjusting inter-element delay profiles, compressing the acoustic trap to single-cell dimensions for final placement precision.
+Gunner Ray: The central acoustic focal axis of the PMUT array, extending from the barrel face to the tissue surface. The gunner ray defines the trajectory of each deposition event.
+Stylus Geometry: The overall tapered form factor of the deposition unit, analogous to a pencil or stylus, wherein the reservoir end is approximately one millimeter diameter and the barrel tip is approximately 0.5 millimeter diameter. The length scales with the organ being manufactured.
+Tribe: As defined in co-pending application P0: a pre-formed cluster of 5 to 50 cells assembled at physiological temperature. In the context of this application, tribes are the fundamental cargo unit for the tribe-volume wide-envelope ejection mode.
+Tribe-Volume Ejection Mode: The primary ejection mode in which the PMUT array generates an acoustic trap sized to the tribe cluster diameter (approximately 100 micrometers) rather than to the individual cell diameter. This mode provides approximately 44 times greater ejection velocity than single-cell ejection mode while maintaining full acoustic custody of the cargo.
+Whisper-Power Operation: PMUT array operation at acoustic intensities at or near the minimum threshold required to maintain stable cell trapping, generating acoustic radiation forces of 1 to 200 piconewtons on individual cells. Whisper-power operation prevents cell membrane damage, suppresses thermal heating effects, and limits lateral field extent to enable dense parallel operation without inter-channel interference.
+________________
+
+
+VI. DETAILED DESCRIPTION OF THE INVENTION
+A. Stylus Geometry and Rationale
+The deposition unit adopts a tapered stylus form factor for three independent reasons, each sufficient alone to motivate the design.
+First, the tissue face imposes a geometric constraint: each DU must maintain a fixed working distance of approximately 0.5 to 1.0 millimeter between its firing face and the growing tissue surface. As tissue grows outward during precipitation, the DU must retract at the same rate. A slender stylus geometry permits positioning arms to maintain this standoff distance with coarse positioning while the PMUT array handles fine aiming within its plus or minus 30 degree steering envelope.
+Second, the cell magazine functionality requires that the reservoir section be wide enough to pack a meaningful number of cells while the barrel section be narrow enough for precision targeting. The taper from one millimeter reservoir to 0.5 millimeter barrel accomplishes both goals without design conflict. The reservoir holds a dense cell magazine; the barrel provides the precision ejection geometry.
+Third, the stylus geometry naturally suggests the functional analogy to a mechanical pencil: as cells are consumed from the magazine, the remaining cells feed toward the tip. The acoustic feed mechanism advances cells distally at the firing rate, maintaining a full acoustic trap at the barrel face throughout the deposition sequence.
+B. Reservoir Section: The Cell Magazine
+Dimensions and Capacity
+The reservoir section is approximately one millimeter in internal diameter. At dormancy temperature of 4 degrees Celsius, whisper-power acoustic standing waves maintain cells in individual pressure nodes preventing cell-to-cell contact and wall contact. In microgravity, gravitational sedimentation is absent, and the acoustic wells require only the minimum force to maintain cell position against Brownian displacement.
+Cell packing density in the reservoir is governed by hexagonal close-packing geometry at the acoustic node spacing. Because microgravity eliminates the gravitational forces that on Earth would require larger inter-node spacing to prevent gravitational escape, the acoustic wells can maintain cells at physical close-pack density. For mammalian cells of representative diameters, reservoir capacity per centimeter of length is approximately as follows:
+Cell Diameter
+	Cells per cm of Reservoir
+	Representative Cell Type
+	10 micrometers
+	~11 million
+	Stem cells, small progenitors
+	15 micrometers
+	~3.3 million
+	Keratinocytes, fibroblasts
+	20 micrometers
+	~1.4 million
+	Endothelial cells
+	Tribes (~100 micrometers)
+	~29,000 tribe positions
+	Pre-formed multi-cell clusters
+	
+
+These densities are achievable because whisper-power acoustic trapping in microgravity does not require the wide inter-node spacing needed to resist gravitational escape on Earth. The reservoir functions as a true high-density cell magazine, not a dilute suspension.
+Temperature Management
+The reservoir section is maintained at dormancy temperature throughout loading and deposition. Viscosity of the aqueous carrier medium is approximately 1.55 millipascal-seconds at 4 degrees Celsius, decreasing to 1.17 at 14 degrees Celsius, 0.91 at 24 degrees Celsius, and 0.69 at 37 degrees Celsius. Since maximum ejection velocity scales inversely with viscosity at constant acoustic force, operating temperature has a direct effect on maximum firing rate. The firing rate of approximately 467 cells per second at 4 degrees Celsius scales proportionally with viscosity reduction at higher temperatures, reaching approximately 620 Hz at 14 degrees Celsius and approximately 1,046 Hz at 37 degrees Celsius.
+In preferred embodiments, the reservoir section is maintained at 4 degrees Celsius to preserve metabolic dormancy throughout the deposition sequence. Higher operating temperatures may be employed for warm-path deposition of cells that have not been chilled to dormancy, in which case correspondingly higher firing rates are achievable.
+C. The PMUT Phased Array at the Barrel Face
+Physical Dimensions and Element Count
+The barrel face is approximately 0.5 millimeter diameter, providing a total face area of approximately 196,000 square micrometers. Piezoelectric micromachined ultrasonic transducer elements fabricated by MEMS processes can be manufactured at individual element diameters of 20 to 50 micrometers with inter-element gaps of 5 to 15 micrometers. At 50 micrometer element diameter with 10 micrometer gap (60 micrometer pitch), a 0.5 millimeter barrel face accommodates more than 50 individually addressable PMUT elements.
+In preferred embodiments, ten or more PMUT elements are arranged at the barrel face. This element count is sufficient for phased array focusing and beam steering while leaving substantial face area available for routing, structural support, and the feed channel through which cells transit from reservoir to ejection position. The ten percent or greater utilization of available face area means that element placement is not a limiting constraint; element geometry and frequency are selected based on acoustic requirements rather than space constraints.
+Frequency and Element Sizing
+PMUT resonant frequency scales inversely with element diameter and with membrane thickness and material properties. At 50 micrometer element diameter, resonant frequencies of 10 to 40 megahertz are achievable depending on fabrication parameters. Frequencies in this range provide acoustic wavelengths of 37 to 148 micrometers in aqueous medium, which is well-matched to single-cell dimensions of 10 to 30 micrometers and to tribe cluster dimensions of approximately 100 micrometers.
+The phased array architecture requires that individual elements be addressable with independent drive timing at nanosecond resolution. Modern MEMS drive electronics achieve this requirement with standard field-programmable gate array controllers. The acoustic phase delay required to shift from wide-envelope tribe-volume mode to narrow-terminal cell-scale mode is computed electronically and applied to the array in nanoseconds, a transition time that is negligible relative to the microsecond-scale transit time of cells in flight.
+Beam Steering Envelope
+The PMUT phased array achieves beam steering of plus or minus 30 degrees from the barrel axis (the gunner ray). At a working distance of 0.5 millimeter from the barrel face to the tissue surface, the plus or minus 30 degree steering envelope covers a circular area of approximately 0.58 millimeter diameter. At a working distance of 1.0 millimeter, the same steering envelope covers approximately 1.15 millimeter diameter.
+For a target deposition area of one square millimeter, a working distance of 1.0 millimeter provides complete coverage with angular margin. Working distance can be set by the positioning arm within the range of 0.5 to 1.0 millimeter based on organ geometry and precision requirements.
+D. The Two-Phase Deposition Event
+Phase One: Wide-Envelope Tribe-Volume Transit
+Each deposition event begins with the PMUT array configured for tribe-volume wide-envelope ejection mode. In this mode, the array drives an acoustic trap sized to the tribe cluster diameter of approximately 100 micrometers rather than to the individual cell diameter of 10 to 30 micrometers.
+The acoustic radiation force scales with object radius cubed in the Rayleigh regime where the object is smaller than the acoustic wavelength. Viscous drag scales with object radius linearly. The ratio of radiation force to drag force therefore scales with radius squared. For a tribe-scale acoustic trap (50 micrometer effective radius) compared to a single-cell trap (7.5 micrometer effective radius), the velocity achievable at constant whisper-power operation scales by the ratio of radii squared: (50/7.5) squared, equal to approximately 44 times greater velocity.
+This scaling applies regardless of whether the cargo is a tribe cluster of 30 cells or a single cell carried within a tribe-volume acoustic envelope. A single cell loaded into a tribe-volume trap travels at tribe-scale velocity because the acoustic force acts on the full trap volume, not on the cell alone. The cargo size within the trap does not determine the transit velocity; the trap size determines the transit velocity.
+At dormancy temperature (4 degrees Celsius, viscosity 1.55 millipascal-seconds), with acoustic radiation force of approximately 100 piconewtons, single-cell ejection velocity is approximately 467 millimeters per second, corresponding to a transit time of approximately 1.07 milliseconds across a 0.5 millimeter gap. With tribe-volume wide-envelope ejection, the same acoustic force applied to a tribe-scale trap achieves ejection velocity of approximately 20,000 millimeters per second (20 meters per second), corresponding to a transit time of approximately 25 microseconds across the same gap.
+Phase Two: Terminal Field Narrowing for Precision Placement
+In the final fraction of the deposition transit — occurring over the last approximately 0.1 millimeter of approach to the tissue face — the PMUT array executes a field-narrowing transition. The array drive electronics update the inter-element delay profile from wide-envelope configuration to narrow-focus configuration. This transition occurs in nanoseconds.
+The field narrowing simultaneously achieves two outcomes. First, the acoustic trap compresses from tribe-scale (approximately 100 micrometers) to cell-scale (approximately 10 to 30 micrometers), providing the micrometer-precision final placement geometry required for vascular endothelial cells, capillary wall architecture, and other precision-critical structures. Second, the energy concentration accompanying field narrowing decelerates the cargo from tribe-scale transit velocity to near-zero velocity at the tissue face. The cargo arrives at the target position moving slowly and precisely centered within a tight acoustic field.
+This two-phase architecture breaks the assumed tradeoff between transit speed and placement precision. Transit is fast because the wide-envelope mode applies tribe-scale acoustic force. Placement is precise because the terminal narrowing mode reduces the final positioning geometry to cell scale. Both performance requirements are met within a single continuous acoustic operation with no mechanical intervention and no interruption of acoustic custody.
+The tissue face itself serves as the terminal boundary condition. Acoustic pressure reflects from the growing tissue surface, creating a standing wave between the barrel face and tissue face that guides the cargo to contact. The cargo undergoes a controlled acoustic landing rather than unguided collision. Acoustic custody is maintained from reservoir through transit through tissue contact; the cell is never in free flight at any point.
+E. Parallel Operation: Interference Analysis
+The Transit Time Solution
+Adjacent deposition units operating simultaneously raise the question of inter-channel acoustic interference. A firing DU generates an acoustic field that extends laterally from its barrel axis. At whisper-power operation, the lateral field decays rapidly with distance, but a finite field exists at adjacent channel positions.
+The critical insight is that transit time in tribe-volume wide-envelope mode is approximately 25 microseconds. During this interval, any lateral force from an adjacent firing channel can produce a lateral displacement of at most:
+Lateral displacement = (1/2) x (F_lateral / m_tribe) x t_transit squared
+At whisper-power lateral field intensity of approximately 10 piconewtons at 100 micrometer separation, acting on a tribe mass of approximately 65 picograms, over 25 microseconds of transit, the lateral displacement is approximately 0.048 micrometers — less than 50 nanometers. This displacement is negligible relative to the plus or minus 5 micrometer placement tolerance and is below the resolution of the acoustic imaging system.
+The 25-microsecond tribe-speed transit time eliminates acoustic crosstalk as a practical constraint on parallel operation. Adjacent DUs can fire simultaneously without coordinated timing. The transit is complete before any meaningful lateral displacement accumulates. Parallel operation density is therefore limited by physical access geometry rather than acoustic interference physics.
+Simultaneous Parallel Firing
+In preferred embodiments, all deposition units within the build chamber fire simultaneously during the precipitation phase. The build file assigns each DU to a specific tissue region. Within its region, each DU fires continuously while its positioning arm adjusts standoff distance as tissue grows. Zone controllers manage groups of 100 to 1,000 DUs, aggregating status without issuing real-time firing commands. Each DU fires autonomously according to its local build file segment.
+The aggregate throughput of the system scales linearly with the number of simultaneously operating DUs. For lung-scale organs requiring approximately 100 billion cells, approximately 60,000 deposition units operating simultaneously at approximately 467 cells per second each in single-cell mode, or at correspondingly fewer DUs in tribe-volume mode, achieve the required throughput within the target build time of approximately 71 seconds.
+F. Viscosity and Temperature Effects on Maximum Firing Rate
+Because maximum ejection velocity scales inversely with medium viscosity, and viscosity of aqueous media decreases monotonically with increasing temperature, the maximum firing rate is a function of operating temperature. The relationship is:
+v_max = F_acoustic / (6 x pi x eta x r)
+where F_acoustic is the acoustic radiation force in piconewtons, eta is medium viscosity in millipascal-seconds, and r is the effective trap radius in micrometers.
+Temperature (C)
+	Viscosity (mPa-s)
+	Single-Cell v_max (mm/s)
+	Firing Rate (Hz)
+	4
+	1.55
+	467
+	467
+	14
+	1.17
+	618
+	618
+	24
+	0.91
+	794
+	794
+	37
+	0.69
+	1,046
+	1,046
+	
+
+In tribe-volume wide-envelope mode, all velocities in the above table scale upward by the radius-squared ratio of approximately 44, yielding theoretical maximum firing rates exceeding 40,000 Hz at dormancy temperature. The practical ceiling in tribe mode is determined by tribe structural integrity under ejection acceleration rather than by acoustic physics, and is estimated at 1,000 to 3,000 Hz based on cell-cell junction force analysis.
+G. Transit-Induced Fluid Disturbance Analysis
+The tribe-volume acoustic slug moving at approximately 20 meters per second through aqueous medium displaces fluid ahead of it and draws fluid into its wake. The acoustic phased array simultaneously generates constructive interference zones in the direction of travel and destructive interference zones flanking the beam. This raises the question of whether transit-induced fluid disturbance could affect adjacent cells in the reservoir or recently placed cells at the tissue face.
+Reynolds Number of the Moving Slug
+The Reynolds number of the moving acoustic slug is calculated as Re equals rho times v times d divided by eta, where rho is fluid density (1,000 kilograms per cubic meter), v is transit velocity (20 meters per second), d is slug diameter (0.0001 meter), and eta is dynamic viscosity at 4 degrees Celsius (0.00155 pascal-seconds). This yields Re equal to approximately 1,290, placing the transit event in the transitional regime rather than the laminar regime. This is a non-trivial Reynolds number that warrants analysis.
+Bow Wave Management by the Acoustic Field
+The constructive interference ahead of the slug pre-pressurizes fluid in the direction of travel, creating a pressure-driven flow that displaces fluid laterally before the slug arrives. The destructive interference zones flanking the beam create corresponding low-pressure regions that draw displaced fluid outward and away from the transit corridor. This acoustic bow wave effect means the fluid is not bulldozed aside by blunt mechanical impact but is guided by the pressure field geometry. At 100 micrometer slug scale, surface tension forces also resist turbulent breakup of the fluid structure surrounding the slug during transit.
+Wake Analysis and Vortex Shedding
+The trailing wake behind the slug is the more significant fluid dynamics concern. At Re approximately 1,290, von Karman vortex shedding is possible behind the moving slug. Vortex shedding frequency is estimated by the Strouhal relationship as f equals St times v divided by d, where the Strouhal number St is approximately 0.2, v is 20 meters per second, and d is 0.0001 meter, yielding f approximately 40,000 hertz. These vortices are high-frequency and extremely small, confined to the immediate wake volume behind the slug.
+Decay Within the Inter-Firing Interval
+The critical comparison is between the vortex decay time and the inter-firing interval. At 100 micrometer length scale in aqueous medium, viscous dissipation of turbulent kinetic energy occurs on a timescale of approximately d squared divided by nu, where nu is kinematic viscosity (approximately 1.55 times ten to the negative six square meters per second at 4 degrees Celsius), yielding a dissipation timescale of approximately 6.5 microseconds. The inter-firing interval at 467 cells per second is 2,140 microseconds. The ratio of dissipation timescale to inter-firing interval is approximately 1 to 330. All transit-induced fluid disturbance, including any von Karman wake vorticity, dissipates more than two orders of magnitude before the next deposition event begins.
+Disturbance of adjacent cells in the reservoir is similarly bounded: the 25-microsecond transit duration limits the duration of any pressure perturbation at adjacent acoustic well positions. Cells held in acoustic wells require sustained lateral force to escape their trapping nodes. A 25-microsecond pressure perturbation at whisper-power levels is insufficient to displace a cell from its acoustic well.
+Transit-induced fluid disturbance is therefore not a constraint on deposition accuracy, parallel operation density, or cell viability within the reservoir.
+H. Single Pipeline Input Architecture
+Each deposition unit receives cells from a single pipeline input connecting the external staging area to the reservoir section. The single-input architecture simplifies DU fabrication, eliminates internal cell routing complexity, and is made possible by the pre-staging architecture described in co-pending application P0. Cells arrive at the DU already sorted in firing order; the DU does not perform cell-type selection internally.
+The pipeline delivers cells via acoustic peristalsis as described in co-pending application P2B. The peristaltic feed rate matches the DU firing rate. A small buffer volume within the transition zone between reservoir and barrel decouples instantaneous firing demand from pipeline flow variations.
+H. Local Controller and Autonomous Operation
+Each deposition unit contains a local microcontroller implementing Level 0 of the hierarchical control architecture. The local controller receives the build file segment assigned to this DU's region of the tissue construct. During precipitation, the local controller executes firing without real-time instructions from higher control levels.
+The local controller performs the following operations autonomously: acoustic pulse-echo health check on each cell at the barrel face; comparison of acoustic impedance signature against expected cell type; pass or fail decision and logging; computation of PMUT delay profile for target position; execution of wide-envelope tribe-volume ejection pulse; timing of field-narrowing transition at terminal approach; and confirmation of placement completion before advancing to the next cell.
+Each complete deposition cycle requires approximately 2.14 milliseconds at 4 degrees Celsius in single-cell mode, providing a 7 to 40 fold safety margin over the acoustic pulse-echo cycle time of 50 to 300 microseconds. The local controller has substantial idle time within each cycle, which is used for data logging and upstream status reporting.
+Data volume at Level 0 is approximately 30 bytes per cell, corresponding to approximately 14 kilobytes per second per deposition unit at 467 cells per second. This data volume is well within the capability of commodity microcontrollers and standard wireless communication links.
+I. Deposition Unit Swapping and Magazine Refresh
+Each deposition unit magazine contains a finite cell capacity. As cells are consumed, the pipeline continuously replenishes the reservoir from the external staging area. In preferred embodiments, the pipeline flow rate matches the firing rate and the DU operates continuously without interruption.
+In embodiments where pipeline replenishment is not continuous, the positioning arm may retract a depleted DU and insert a fresh pre-loaded DU in its place. Swap time is designed to be less than five seconds to minimize build interruption. The build controller tracks DU depletion schedules and coordinates swaps to avoid simultaneous multi-DU gaps in coverage.
+________________
+
+
+VII. CLAIMS
+What is claimed is:
+1. A deposition unit for precision acoustic cell deposition in a microgravity tissue manufacturing environment, comprising: a stylus body having a tapered form factor with a reservoir section of approximately one millimeter internal diameter transitioning to a barrel section of approximately 0.5 millimeter diameter; a piezoelectric micromachined ultrasonic transducer (PMUT) phased array comprising ten or more individually addressable transducer elements at the barrel face; a single pipeline input connecting an external cell staging area to the reservoir section; a whisper-power acoustic field within the reservoir section maintaining cells in hexagonal close-pack configuration without cell-to-cell contact and without contact with reservoir walls; and a local controller configured to execute cell deposition autonomously according to a pre-loaded build file segment without real-time instructions from a central controller.
+2. The deposition unit of claim 1, wherein the PMUT phased array is configurable between a wide-envelope tribe-volume ejection mode, in which the array generates an acoustic trap sized to a tribe cluster diameter of approximately 100 micrometers, and a narrow-focus cell-scale mode, in which the array generates an acoustic trap sized to an individual cell diameter of 10 to 30 micrometers, by adjusting inter-element delay profiles without mechanical reconfiguration.
+3. The deposition unit of claim 2, wherein the transition from wide-envelope mode to narrow-focus mode is executed during a terminal approach phase occurring over the last approximately 0.1 millimeter of cell transit distance to a tissue surface, wherein said transition simultaneously compresses the acoustic trap to cell-scale dimensions and decelerates the cargo to near-zero velocity at the tissue face.
+4. The deposition unit of claim 1, wherein a single cell or tribe carried within a tribe-volume acoustic trap achieves transit velocity approximately 44 times greater than the transit velocity achievable with a cell-scale acoustic trap at equivalent acoustic power, based on the scaling relationship wherein acoustic radiation force scales with object radius cubed and viscous drag scales with object radius, yielding net velocity proportional to radius squared.
+5. The deposition unit of claim 4, wherein at a dormancy temperature of 4 degrees Celsius, tribe-volume wide-envelope ejection achieves transit velocities of approximately 20,000 millimeters per second, corresponding to transit times of approximately 25 microseconds across a 0.5 millimeter working distance.
+6. The deposition unit of claim 5, wherein the 25-microsecond transit time limits lateral displacement of cargo from adjacent simultaneously-firing deposition unit acoustic fields to less than 50 nanometers, enabling simultaneous parallel operation of adjacent deposition units without acoustic crosstalk affecting placement accuracy within a plus or minus 5 micrometer placement tolerance.
+7. The deposition unit of claim 1, wherein maximum firing rate scales inversely with medium viscosity according to the relationship v_max = F_acoustic divided by (6 times pi times eta times r), wherein increasing operating temperature from 4 degrees Celsius to 37 degrees Celsius reduces medium viscosity from approximately 1.55 to 0.69 millipascal-seconds and increases maximum firing rate from approximately 467 to approximately 1,046 cells per second.
+8. The deposition unit of claim 1, wherein the PMUT phased array achieves beam steering of plus or minus 30 degrees from the barrel axis, covering a deposition area of approximately 1.15 millimeter diameter at a working distance of 1.0 millimeter.
+9. The deposition unit of claim 1, wherein PMUT elements at the barrel face have individual element diameters of 20 to 50 micrometers, occupy less than 50 percent of the total barrel face area, and provide resonant frequencies of 10 to 40 megahertz selected to match the acoustic wavelength to the target cell or tribe dimensions.
+10. The deposition unit of claim 1, wherein the local controller executes for each deposition event: a pulse-echo health check extracting cell diameter, acoustic impedance, and three-dimensional position from a single acoustic cycle; a pass or fail determination against build file specifications; computation of PMUT delay profile for the target position within the beam steering envelope; execution of wide-envelope ejection; timing of terminal field narrowing at a predetermined distance from the tissue face; and confirmation of placement before advancing to the next cell.
+11. The deposition unit of claim 1, wherein the tissue surface serves as a reflective boundary generating a standing wave between barrel face and tissue face during terminal approach, wherein said standing wave provides acoustic guidance of cargo to tissue contact without unguided free-flight at any point during the deposition event.
+12. The deposition unit of claim 1, wherein the reservoir section at dormancy temperature of 4 degrees Celsius and whisper-power acoustic standing wave operation maintains cells at hexagonal close-pack density, providing reservoir capacities of approximately 11 million cells per centimeter of reservoir length at 10 micrometer cell diameter, 3.3 million cells per centimeter at 15 micrometer cell diameter, and 1.4 million cells per centimeter at 20 micrometer cell diameter.
+13. The deposition unit of claim 1, wherein the local controller reports approximately 30 bytes of acoustic characterization data per deposited cell to a zone controller managing 100 to 1,000 deposition units, comprising cell acoustic impedance signature, three-dimensional position measurement, pass or fail classification, and timestamp, at a data rate of approximately 14 kilobytes per second per deposition unit.
+14. A method of precision acoustic cell deposition using a deposition unit as recited in claim 1, comprising: loading a cell or tribe into a tribe-volume acoustic trap at the barrel face; ejecting said cargo using wide-envelope tribe-volume acoustic ejection at a transit velocity of approximately 20,000 millimeters per second; transitioning the PMUT array to narrow-focus cell-scale mode during terminal approach within 0.1 millimeter of the tissue surface; decelerating cargo to near-zero velocity at the target position; and confirming placement via acoustic pulse-echo measurement before advancing to the next deposition event.
+15. The method of claim 14, wherein a single cell is carried within a tribe-volume acoustic trap, achieving tribe-scale transit velocity while delivering single-cell payload, enabling single-cell deposition precision at tribe-scale throughput.
+16. A system for massively parallel acoustic cell deposition comprising a plurality of deposition units as recited in claim 1, wherein all deposition units fire simultaneously during a precipitation phase, each operating autonomously within its assigned tissue region, achieving aggregate cell deposition rates of: approximately 6.67 million cells per second for a 100 square centimeter skin graft requiring approximately 15 seconds to complete; and approximately 1.4 billion cells per second for a lung-scale organ requiring approximately 71 seconds to complete; wherein said aggregate rates are achieved by distributing load across approximately 60,000 simultaneously operating deposition units each processing approximately 467 cells per second in single-cell mode.
+17. The system of claim 16, wherein simultaneous operation of adjacent deposition units does not require coordinated firing timing because tribe-speed transit times of approximately 25 microseconds limit acoustic crosstalk-induced lateral displacement to less than 50 nanometers, below the resolution threshold of placement quality monitoring.
+________________
+
+
+ABSTRACT
+A deposition unit for precision acoustic cell deposition in microgravity tissue manufacturing comprises a tapered stylus body with a one millimeter diameter reservoir section transitioning to a 0.5 millimeter diameter barrel section containing a PMUT phased array of ten or more individually addressable elements. The reservoir maintains dormant cells in hexagonal close-pack density using whisper-power acoustic standing waves. The PMUT array operates in two phases: a wide-envelope tribe-volume ejection mode that achieves transit velocities approximately 44 times greater than single-cell ejection, and a terminal field-narrowing mode that compresses the acoustic trap to cell-scale dimensions for micrometer-precision final placement. Tribe-speed transit times of approximately 25 microseconds limit acoustic crosstalk between adjacent simultaneously-firing units to less than 50 nanometers lateral displacement, enabling massively parallel operation without interference coordination. Single cells may be carried within tribe-volume traps to achieve tribe-scale transit velocity with single-cell payload. Acoustic custody of cargo is maintained continuously from reservoir through transit through tissue contact; cargo is never in unguided free flight. A local controller executes deposition autonomously from a pre-loaded build file segment at approximately 467 cells per second per unit in single-cell mode. Sixty thousand simultaneously operating units achieve the cell deposition throughput required for lung-scale organ manufacturing in approximately 71 seconds.
