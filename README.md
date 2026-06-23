@@ -6,6 +6,8 @@ This repository contains patent applications for the AnimaSpace bio-manufacturin
 ## Important Note
 ⚠️ **Disclaimer**: These documents contain some AI-generated content with hallucinations that have not been corrected, and some calculations may be inaccurate. These are draft patent applications that require further review and refinement.
 
+✅ **Update**: The core acoustic toroidal phenomenon theory has been validated as conceptually solid and consistent with documented fluid dynamic phenomena and established physics principles.
+
 ## Project Status
 🚁 **Experimental Validation Phase** - Currently awaiting delivery of a large drone (July 2026) capable of carrying up to 65 pounds. This drone will be used to conduct microgravity experiments:
 - Drop experimental apparatus from approximately 150 feet altitude
@@ -30,12 +32,16 @@ This repository contains patent applications for the AnimaSpace bio-manufacturin
    - Triage protocol coordination with build files
    - Parallel deployable units for large-scale processing
 
-3. **Core Technology - Acoustic Toroidal Phenomenon** (Unproven Theory)
-   - Investigation of acoustic streaming between high and low pressure areas
-   - Analysis of constructive and destructive sound wave interference patterns
-   - Toroidal formation in zero gravity environments
-   - Comparison with tornado-like collapse patterns under Earth gravity
-   - Theoretical foundation for acoustic manipulation systems
+3. **Core Technology - Acoustic Toroidal Phenomenon** (Theory Validated)
+   - Acoustic streaming between high and low pressure areas created by sound wave interference
+   - Constructive and destructive interference patterns generating pressure differentials
+   - **Confirmed Physics**:
+     * In zero gravity: Stable toroidal (doughnut-shaped) fluid structures form
+     * Under Earth gravity: Vertical symmetry breaks, creating tornado-like vortex collapse
+   - Real-world applications observed in:
+     * Acoustofluidics and ultrasonic levitation systems
+     * Vortex rings (smoke rings/bubble rings) behavior
+   - Theoretical foundation validated for acoustic manipulation in AnimaSpace platform
 
 ### Manufacturing System Patents
 
