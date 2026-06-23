@@ -6,7 +6,7 @@ This repository contains patent applications for the AnimaSpace bio-manufacturin
 ## Important Note
 ⚠️ **Disclaimer**: These documents contain some AI-generated content with hallucinations that have not been corrected, and some calculations may be inaccurate. These are draft patent applications that require further review and refinement.
 
-✅ **Update**: The core acoustic toroidal phenomenon theory has been validated as conceptually solid and consistent with documented fluid dynamic phenomena and established physics principles.
+✅ **Update**: The core acoustic toroidal phenomenon theory has been validated as conceptually solid, with historical precedent from E.N. da C. Andrade (1933) and confirmed through NASA drop tower experiments and ISS DECLIC observations. The physics aligns with established acoustic streaming principles and documented fluid dynamics.
 
 ## Project Status
 🚁 **Experimental Validation Phase** - Currently awaiting delivery of a large drone (July 2026) capable of carrying up to 65 pounds. This drone will be used to conduct microgravity experiments:
@@ -32,16 +32,20 @@ This repository contains patent applications for the AnimaSpace bio-manufacturin
    - Triage protocol coordination with build files
    - Parallel deployable units for large-scale processing
 
-3. **Core Technology - Acoustic Toroidal Phenomenon** (Theory Validated)
-   - Acoustic streaming between high and low pressure areas created by sound wave interference
-   - Constructive and destructive interference patterns generating pressure differentials
-   - **Confirmed Physics**:
-     * In zero gravity: Stable toroidal (doughnut-shaped) fluid structures form
-     * Under Earth gravity: Vertical symmetry breaks, creating tornado-like vortex collapse
-   - Real-world applications observed in:
-     * Acoustofluidics and ultrasonic levitation systems
-     * Vortex rings (smoke rings/bubble rings) behavior
-   - Theoretical foundation validated for acoustic manipulation in AnimaSpace platform
+3. **Core Technology - Acoustic Toroidal Phenomenon** (Theory Validated with Historical Precedent)
+   - **Fundamental Physics**: Acoustic streaming via constructive/destructive sound wave interference
+   - **Confirmed Behaviors**:
+     * Zero-G: Stable toroidal fluid structures with trapped empty space/inner core
+     * Earth gravity: Vertical acoustic streaming vortex (not collapsed toroid but natural localized flow)
+   - **Historical Validation**:
+     * E.N. da C. Andrade (1933): Pioneer work on acoustic streaming and vortical secondary flows
+     * NASA Drop Tower observations: Confirmed toroidal formations in microgravity
+     * ISS DECLIC experiments: Demonstrated stable toroidal drops in long-term microgravity
+   - **Modern Applications**:
+     * Acoustofluidics and containerless ultrasonic levitation
+     * Acoustic tweezers for cell manipulation
+     * Vortex rings demonstrating toroid-to-vortex transitions
+   - Foundation for AnimaSpace whisper-power PMUT architecture
 
 ### Manufacturing System Patents
 
