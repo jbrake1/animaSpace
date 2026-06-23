@@ -23,31 +23,45 @@ This repository contains patent applications for the AnimaSpace bio-manufacturin
    - Triage protocol coordination with build files
    - Parallel deployable units for large-scale processing
 
+3. **Core Technology - Acoustic Toroidal Phenomenon** (Unproven Theory)
+   - Investigation of acoustic streaming between high and low pressure areas
+   - Analysis of constructive and destructive sound wave interference patterns
+   - Toroidal formation in zero gravity environments
+   - Comparison with tornado-like collapse patterns under Earth gravity
+   - Theoretical foundation for acoustic manipulation systems
+
 ### Manufacturing System Patents
 
-3. **Bio Reactor** - Advanced Cell Culture System for Microgravity Tissue Manufacturing
+4. **Bio Reactor** - Advanced Cell Culture System for Microgravity Tissue Manufacturing
    - Sandwich-stack architecture with PMUT arrays
    - Multi-cell-type simultaneous culture
    - Automated nutrient delivery and waste removal
    - Integrated monitoring and control systems
 
-4. **Build, Incubate and Shipping Chamber** - Integrated Manufacturing and Transport System
+5. **Build, Incubate and Shipping Chamber** - Integrated Manufacturing and Transport System
    - Combined build and incubation environment
    - Automated shipping preparation
    - Environmental control during transport
    - Quality assurance protocols
 
-5. **Deposition Unit** - Precision Cell Deposition System for Tissue Assembly
+6. **Deposition Unit** - Precision Cell Deposition System for Tissue Assembly
    - High-precision cell placement
    - Multi-cell-type coordination
    - Layer-by-layer tissue construction
    - Real-time position verification
 
-6. **Perfusion System** - Automated Nutrient Delivery and Waste Management
+7. **Perfusion System** - Automated Nutrient Delivery and Waste Management
    - Continuous medium circulation
    - Oxygen and nutrient delivery optimization
    - Waste product removal
    - pH and temperature regulation
+
+### Supporting Documents
+
+8. **GA Non-Provisional Insertions** - Additional patent application materials and technical specifications
+   - Supplementary claims and embodiments
+   - Detailed technical implementations
+   - Patent application formatting elements
 
 ## Technology Overview
 
@@ -85,13 +99,17 @@ PO Box 1288, Camino, CA 95709
 ```
 /
 ├── README.md
+├── LICENSE
 ├── Warming and Reanimation Machine.docx.txt
 ├── Whisper Power patent.docx (1).txt
 ├── bio reactor.docx (2).txt
 ├── build, incubate and shipping chamber.docx (1).txt
 ├── build, incubate and shipping chamber.docx (2).txt
 ├── deposition unit.docx (1).txt
-└── perfusion system.docx (1).txt
+├── perfusion system.docx (1).txt
+├── core tech - unproven.pdf
+├── GA_NonProv_Insertions_v1.docx
+└── core_tech
 ```
 
 ## Legal Notice
