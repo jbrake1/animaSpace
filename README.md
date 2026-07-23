@@ -1,142 +1,149 @@
-# AnimaSpace Patent Portfolio
+# AnimaSpace — General Micro Assembler
 
-## Overview
-This repository contains patent applications for the AnimaSpace bio-manufacturing platform - an innovative microgravity-based tissue and organ manufacturing system designed for space-based operations.
+**A machine that builds the way nature does: shell by shell, using sound instead of hands.**
 
-## Important Note
-⚠️ **Disclaimer**: These documents contain some AI-generated content with hallucinations that have not been corrected, and some calculations may be inaccurate. These are draft patent applications that require further review and refinement.
-
-✅ **Update**: The core acoustic toroidal phenomenon theory has been validated as conceptually solid, with historical precedent from E.N. da C. Andrade (1933) and confirmed through NASA drop tower experiments and ISS DECLIC observations. The physics aligns with established acoustic streaming principles and documented fluid dynamics.
-
-## Project Status
-🚁 **Experimental Validation Phase** - Currently awaiting delivery of a large drone (July 2026) capable of carrying up to 65 pounds. This drone will be used to conduct microgravity experiments:
-- Drop experimental apparatus from approximately 150 feet altitude
-- Achieve ~3.5 seconds of zero-gravity conditions during free fall
-- Test acoustic toroidal formation using a phased array system
-- Validate theoretical predictions of toroid stability in microgravity vs Earth gravity collapse patterns
-
-## Patent Documents
-
-### Core Technology Patents
-
-1. **Whisper Power Patent** - Whisper-Power Acoustic Transducer Architecture for Biological Cell Positioning in Microgravity Fluid Environments
-   - Dense array architecture of piezoelectric micromachined ultrasonic transducers (PMUTs)
-   - Operates below mechanotransduction activation threshold
-   - Volumetric cell positioning without substrates or channel walls
-   - Foundational hardware principle for all subsystems
-
-2. **Warming and Reanimation Machine (WRM)** - An Autonomous Microgravity Cell Processing Unit for Hypothermic Cell Intake, Acoustic Sorting, Viability Assessment, and Triage-Coordinated Delivery
-   - Autonomous cell processing from hypothermic preservation
-   - Cell-type-specific controlled warming rates
-   - Acoustic and optical viability assessment
-   - Triage protocol coordination with build files
-   - Parallel deployable units for large-scale processing
-
-3. **Core Technology - Acoustic Toroidal Phenomenon** (Theory Validated with Historical Precedent)
-   - **Fundamental Physics**: Acoustic streaming via constructive/destructive sound wave interference
-   - **Confirmed Behaviors**:
-     * Zero-G: Stable toroidal fluid structures with trapped empty space/inner core
-     * Earth gravity: Vertical acoustic streaming vortex (not collapsed toroid but natural localized flow)
-   - **Historical Validation**:
-     * E.N. da C. Andrade (1933): Pioneer work on acoustic streaming and vortical secondary flows
-     * NASA Drop Tower observations: Confirmed toroidal formations in microgravity
-     * ISS DECLIC experiments: Demonstrated stable toroidal drops in long-term microgravity
-   - **Modern Applications**:
-     * Acoustofluidics and containerless ultrasonic levitation
-     * Acoustic tweezers for cell manipulation
-     * Vortex rings demonstrating toroid-to-vortex transitions
-   - Foundation for AnimaSpace whisper-power PMUT architecture
-
-### Manufacturing System Patents
-
-4. **Bio Reactor** - Advanced Cell Culture System for Microgravity Tissue Manufacturing
-   - Sandwich-stack architecture with PMUT arrays
-   - Multi-cell-type simultaneous culture
-   - Automated nutrient delivery and waste removal
-   - Integrated monitoring and control systems
-
-5. **Build, Incubate and Shipping Chamber** - Integrated Manufacturing and Transport System
-   - Combined build and incubation environment
-   - Automated shipping preparation
-   - Environmental control during transport
-   - Quality assurance protocols
-
-6. **Deposition Unit** - Precision Cell Deposition System for Tissue Assembly
-   - High-precision cell placement
-   - Multi-cell-type coordination
-   - Layer-by-layer tissue construction
-   - Real-time position verification
-
-7. **Perfusion System** - Automated Nutrient Delivery and Waste Management
-   - Continuous medium circulation
-   - Oxygen and nutrient delivery optimization
-   - Waste product removal
-   - pH and temperature regulation
-
-### Supporting Documents
-
-8. **GA Non-Provisional Insertions** - Additional patent application materials and technical specifications
-   - Supplementary claims and embodiments
-   - Detailed technical implementations
-   - Patent application formatting elements
-
-## Technology Overview
-
-The AnimaSpace platform represents a paradigm shift in tissue engineering and regenerative medicine by leveraging the unique conditions of microgravity to enable:
-
-- **Substrate-free 3D tissue assembly** - Cells can be positioned and maintained in three-dimensional arrangements without scaffolds
-- **Acoustic manipulation** - Non-invasive cell positioning using whisper-power PMUT arrays
-- **Automated manufacturing** - Fully autonomous operation from cell intake through tissue harvest
-- **Parallel processing** - Thousands of units operating simultaneously for scale
-- **Patient-specific organs** - Using patient-derived cells for immunologically compatible organs
-
-## Key Innovations
-
-1. **Whisper-Power Technology**: Ultra-low power acoustic manipulation preventing cell damage during dormant states
-2. **Coordinated Build Files**: Automated orchestration of complex multi-cell-type tissue assembly
-3. **Microgravity Optimization**: Leveraging zero-gravity environment for enhanced 3D tissue formation
-4. **Scalable Architecture**: Modular design enabling parallel processing at manufacturing scale
-5. **End-to-End Automation**: From cell intake through organ harvest without human intervention
-
-## Applications
-
-- Organ manufacturing for transplantation
-- Tissue models for drug testing
-- Personalized medicine approaches
-- Space-based bio-manufacturing
-- Research into tissue development and disease
-
-## Inventor
-
-**Jimmy Claude Brake Jr.**
-PO Box 1288, Camino, CA 95709
-
-## Repository Structure
-
-```
-/
-├── README.md
-├── LICENSE
-├── Warming and Reanimation Machine.docx.txt
-├── Whisper Power patent.docx (1).txt
-├── bio reactor.docx (2).txt
-├── build, incubate and shipping chamber.docx (1).txt
-├── build, incubate and shipping chamber.docx (2).txt
-├── deposition unit.docx (1).txt
-├── perfusion system.docx (1).txt
-├── core tech - unproven.pdf
-├── GA_NonProv_Insertions_v1.docx
-└── core_tech
-```
-
-## Legal Notice
-
-These documents represent patent applications and intellectual property. All rights reserved. Unauthorized reproduction or distribution is prohibited without written permission from the inventor.
-
-## Contact
-
-For licensing inquiries or additional information, please contact the inventor at the address listed above.
+No grippers. No mechanical contact. No defects from handling.
 
 ---
 
-*AnimaSpace - Engineering the Future of Regenerative Medicine in Space*
+## The Idea
+
+Conventional assembly picks parts up and puts them down. Every touch is a chance to
+introduce a defect, and every gripper has a minimum size that sets a floor on what you
+can build.
+
+AnimaSpace removes the hand entirely. Densely packed ultrasonic transducer arrays focus
+sound into fields of high and low pressure. Those fields do two jobs:
+
+- **Direct actuation** — acoustic radiation pressure pushes an object where you want it.
+- **Transport by flow** — acoustic streaming forms stable toroidal currents that carry
+  droplets, bubbles, cells, or particles along with them, the way a stream carries a leaf.
+
+Joining happens through the material's own surface forces — adhesion, surface tension,
+self-assembly — with adhesives introduced only where the chemistry needs help. The
+assembler positions; physics and biochemistry do the bonding.
+
+This is the distinction that matters: **it is not a printer, it is a builder.** It works at
+the scale of the materials themselves, letting cells, crystals, and particles find their
+natural alignment rather than forcing them into a deposited layer.
+
+## Operating Envelope
+
+| | |
+|---|---|
+| **Working scale** | 0.5–1 mm build volume (roughly a pencil-tip width) |
+| **Media** | Functions in both gas and liquid; performance is substantially better in liquid |
+| **Actuation** | Arrays of piezoelectric micromachined ultrasonic transducers (PMUTs) |
+| **Control** | Transducers addressed individually for fine manipulation, or grouped for efficient bulk transport |
+| **Environment** | Designed for microgravity; ground operation is possible but gravity disrupts toroid stability |
+
+Because there is no gravitational "down," the build has no privileged direction. Material
+can be added on every face at once — a mode of construction unavailable to any
+gantry-based or contact assembler.
+
+## Why Microgravity
+
+Gravity is the dominant source of defects in three processes this platform targets:
+
+- **Crystal growth** — buoyancy-driven convection and sedimentation produce dislocations
+  and compositional striations that microgravity growth largely eliminates.
+- **Living tissue** — without a substrate to settle onto, cells can be held in true 3D
+  arrangements and allowed to self-organize rather than being scaffolded into shape.
+- **Layered microelectronics** — defect-free 3D structures require placement precision that
+  contact tooling cannot reach and settling cannot be allowed to disturb.
+
+## Physics Basis
+
+The core phenomenon — acoustic streaming producing stable toroidal fluid structures — has
+established precedent:
+
+- **E. N. da C. Andrade (1933)** — foundational work on acoustic streaming and vortical
+  secondary flows.
+- **NASA drop tower observations** — toroidal formation under short-duration microgravity.
+- **ISS DECLIC experiments** — stable toroidal drop behavior over long-duration microgravity.
+- **Modern acoustofluidics** — acoustic tweezers, containerless ultrasonic levitation, and
+  vortex-ring dynamics demonstrating toroid-to-vortex transitions.
+
+Under Earth gravity, the same drive produces a vertical streaming vortex rather than a
+closed toroid. The predicted contrast between these two regimes is the sharpest available
+test of the model.
+
+## Status
+
+**Concept stage. No working machine exists.**
+
+The physics is grounded in published precedent, but the assembler itself is unbuilt and
+unvalidated. Everything in this repository should be read as design intent, not
+demonstrated capability.
+
+### Path Forward
+
+1. **Scaled-up prototype** — build the array oversized, where fabrication is tractable and
+   the flow structures are directly observable.
+2. **Miniaturization** — shrink toward the 0.5–1 mm target envelope.
+3. **Orbital operation** — run the assembler in sustained microgravity.
+4. **AI-driven characterization** — once in orbit, use automated experiment design to
+   rapidly map the machine's real behavior across parameter space, and feed those findings
+   back into a true general-purpose assembler.
+
+### Prior Experimental Work
+
+Drop testing using a heavy-lift drone (~150 ft release, ~3.5 s of free fall) was planned to
+observe toroid formation versus Earth-gravity collapse using a phased array.
+
+> *Update this section with results, or note that it was not completed.*
+
+## Collaborators Wanted
+
+The proof of concept needs three people. If one of these is you, open an issue.
+
+- **Mathematician** — field synthesis, inverse problems, and control of many-element
+  phased arrays.
+- **Physicist** — acoustofluidics, streaming regimes, and microgravity fluid dynamics.
+- **Integrated-circuit engineer** — dense PMUT array design, per-element drive electronics,
+  and thermal budget.
+
+## Applications
+
+- Substrate-free 3D tissue and organ construction
+- Defect-free crystal and advanced-materials growth
+- Three-dimensional microelectronic assembly
+- Tissue models for drug testing
+- In-space manufacturing of materials that cannot be made on Earth
+
+## Repository Contents
+
+Supporting technical documents drafted for this platform. Several were written as patent
+applications and retain that structure.
+
+| File | Subject |
+|---|---|
+| `Whisper Power patent.docx (1).txt` | Low-power PMUT array architecture for cell positioning below the mechanotransduction threshold |
+| `core tech - unproven.pdf` | The acoustic toroidal phenomenon — core physics |
+| `Warming and Reanimation Machine.docx.txt` | Hypothermic cell intake, acoustic sorting, viability assessment, triage delivery |
+| `bio reactor.docx (2).txt` | Sandwich-stack culture system with integrated PMUT arrays |
+| `build, incubate and shipping chamber.docx (1).txt` | Combined build, incubation, and transport environment |
+| `deposition unit.docx (1).txt` | Precision multi-cell-type placement |
+| `perfusion system.docx (1).txt` | Nutrient delivery, waste removal, pH and temperature regulation |
+| `GA_NonProv_Insertions_v1.docx` | Supplementary claims, embodiments, and application formatting |
+
+### Accuracy Warning
+
+⚠️ These documents contain AI-generated content with uncorrected hallucinations. Some
+calculations are wrong. They are drafts. Do not treat any number in them as verified.
+
+## License and Intent
+
+Released under the **MIT License**.
+
+This is a deliberate public disclosure. The concept exceeds what one person can execute, so
+the material is published openly rather than held. Publication establishes prior art as of
+the commit dates and is intended to let others build on the work freely.
+
+## Author
+
+Jimmy Claude Brake Jr. — [@jbrake1](https://github.com/jbrake1)
+
+---
+
+*AnimaSpace — building at the scale of the materials themselves.*
