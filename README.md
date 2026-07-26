@@ -32,7 +32,7 @@ natural alignment rather than forcing them into a deposited layer.
 | | |
 |---|---|
 | **Working scale** | Axial translation: unbounded (open path length). 6-DOF pose control per axial station. |
-| **Media** | Functions in both gas and liquid; performance is substantially better in liquid |
+| **Media** | Gas: low viscosity enables high-speed transit but provides too little damping for stable positioning. Liquid: higher viscosity damps the particle into a stable trap/corridor for precision placement, at the cost of transit speed. |
 | **Actuation** | Arrays of piezoelectric micromachined ultrasonic transducers (PMUTs) |
 | **Control** | Transducers addressed individually for fine manipulation, or grouped for efficient bulk transport |
 | **Environment** | Designed for microgravity; ground operation is possible but gravity disrupts toroid stability |
