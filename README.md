@@ -31,7 +31,7 @@ natural alignment rather than forcing them into a deposited layer.
 
 | | |
 |---|---|
-| **Working scale** | 0.5–1 mm build volume (roughly a pencil-tip width) |
+| **Working scale** | Axial translation: unbounded (open path length). 6-DOF pose control per axial station. |
 | **Media** | Functions in both gas and liquid; performance is substantially better in liquid |
 | **Actuation** | Arrays of piezoelectric micromachined ultrasonic transducers (PMUTs) |
 | **Control** | Transducers addressed individually for fine manipulation, or grouped for efficient bulk transport |
