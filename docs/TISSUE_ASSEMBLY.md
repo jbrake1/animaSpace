@@ -124,7 +124,7 @@ Same genome. Bioreactors set lineage and regional program (palm vs cheek). Addre
 
 ## Transit Speed
 
-If we take too long to move cells between locations they might die in transit. We move the droplets of water with cells in them through air when we need to move them more than a few centimeters. We can move the droplets through air using toroids at about 2 m/s vs 2 mm/s in water.
+If we take too long to move cells between locations they might die in transit. We move the droplets of water with cells in them through air when we need to move them more than a few centimeters. We can move the droplets through air using toroids at about 10 m/s vs 2 mm/s in water. The fluid and gas phases must be at exact hydrostatic equilibrium (ΔP = 0) at the boundary. Transit tubes are lined with simple, low-power electromagnetic rings or charging plates. We can pull, push, and steer a charged droplet through a vapor-saturated tube at 2 to 10 m/s with microvolt precision—zero moving parts, zero acoustic heat generation, and zero impedance mismatch. Droplets are pushed out sonic push 
 
 ## Toroids
 
